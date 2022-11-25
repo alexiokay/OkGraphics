@@ -23,8 +23,8 @@ div(class=" w-full  flex flex-col  bg-[#d6d6d6]")
       div#offert-elements(class="flex flex-row w-full h-42 mt-16 items-center justify-around ")
         
 
-          <WorkComponent  @click="coverPage" title='Loga' image="/images/header-img.jpg" />
-          <WorkComponent  @click="coverPage"  title='Wizytówki' image="/images/wizytowki/Wizytówka-Informatyk.jpg" />
+          <WorkComponent  @click="coverPage" title='Loga' image="/images/header1-compressed.webp" />
+          <WorkComponent  @click="coverPage"  title='Wizytówki' image="/images/wizytowki/Wizytówka-Informatyk.webp" />
           <WorkComponent  @click="coverPage"  title='Ulotki' image="https://allbor.pl/wp-content/uploads/2022/01/King-garage-dobre-02-01.jpg" />
           
 
@@ -239,7 +239,7 @@ onMounted(() => {
     left: 200vh
 
 #header
-  background-image: url(~/assets/images/header-img2.jpg)
+  background-image: url(~/assets/images/header.webp)
 
   background-position: bottom
   background-repeat: no-repeat
