@@ -11,10 +11,15 @@ div(class=" w-full  flex flex-col  bg-[#d6d6d6]")
   div(class="flex flex-row h-full justify-center mt-16 md:mt-20 mb-12  ")
    div(class="flex h-full flex-row w-full sm:w-[96%] xl:w-[87%] justify-center rounded-md bg-[#202020]")
     div(class="flex h-full flex-col w-[95%]  mt-8 rounded-md ") 
-      div#header(class=" h-[35rem] sm:h-[33rem] w-full bg-[#d6d6d6] shadow-xl flex flex-col items-center")
-        p(class="text-2xl") Nazywam się Oktawia Kaczmarska, jestem grafikiem komputerowym.
-        p Doświadczenie zdobyłam poprzez samokształcenie się zdalnie i nadal kreuje swoje umiejętności, poszerzając przy tym swoje portfolio. Zrealizowałam już kilka projektów graficznych, odnosząc przy tym sukces zawodowy z zadowolonych klientów. Pracuje w domowym zaciszu, by móc maksymalnie się skupić na opracowaniu zlecenia powierzonego przez klienta. Powstają między innymi takie projekty graficzne jak:
-     
+      div#header(class=" h-[35rem] sm:h-[33rem] w-full bg-[#d6d6d6] shadow-xl flex flex-col items-center justify-center")
+        div#header-content(class=" w-full h-[90%] md:h-[100%] flex flex-col items-center justify-around text-white")
+          h1(class=" text-6xl md:text-8xl font-brown font-bold mt-4  text-[#CFB53B] text-center") Ok Graphics
+          h2(class=" text-xl md:text-3xl font-adelia font-medium text-center") TWÓJ ZDALNY GRAFIK KOMPUTEROWY
+          div(class="w-full flex flex-col items-center justify-center mb-16")
+            button#header-button(class="border-2 h-16 w-44 hover:bg-[#CFB53B] hover:border-[#CFB53B]  border-[#CFB53B] text-2xl font-brown text-white") Galeria
+            div(class="w-full flex flex-col justify-center mt-8")
+              h3(class="text-xl font-brown font-semibold text-center  ") Zaprojektuję dla Ciebie wyjątkowe i niepowtarzalne prace graficzne. 
+              h3(class="text-xl font-brown font-semibold text-center ") Dzięki temu twoja firma stanie się rozpoznawalna!
       div#offert-elements(class="flex flex-row w-full h-42 mt-16 items-center justify-around ")
         
 
@@ -232,4 +237,19 @@ onMounted(() => {
 
   100%
     left: 200vh
+
+#header
+  background-image: url(~/assets/images/header-img2.jpg)
+
+  background-position: bottom
+  background-repeat: no-repeat
+  background-size: fill
+
+#header-button
+  -webkit-transition-property: color, background-color
+  transition-property: color, background-color, border
+  -webkit-transition-duration: 0.4s
+  transition-duration: 0.4s
+  -moz-osx-font-smoothing: grayscale
+  cursor: pointer
 </style>

@@ -1,5 +1,5 @@
 <template lang="pug">
-div#order(class="w-full h-max  p-5 bg-slate-900")
+div#order(class="w-full h-max  p-5 bg-[#333533]")
     div#order-title(class='flex flex-row')
     div#order-names(class='flex flex-row justify-between h-12   ')
         div(class='w-[49.5%]')

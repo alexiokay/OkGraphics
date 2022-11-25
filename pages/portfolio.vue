@@ -1,7 +1,7 @@
 <template lang="pug">
 div(class=" w-full h-screen flex flex-col")
 
-    p(class="text-white px-8 text-xl hover:cursor-pointer bg-[#202020] h-[7rem] flex items-center" @click="$emit('close')") X
+    p(class="text-white  px-8 text-xl hover:cursor-pointer bg-[#202020] h-[7rem] flex items-center" @click="$emit('close')") X
 
     div(class="flex flex-row w-full")
         <PortfolioComponent @click="coverPage()" image="https://64.media.tumblr.com/f8d8dba355692b8a1a133c6a2d00e195/3633398f083eee6e-a7/s1280x1920/aba4c6a18b9b206166a8e9f48da72904133d940f.jpg"/>

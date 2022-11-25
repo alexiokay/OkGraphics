@@ -15,7 +15,7 @@ module.exports = {
       }
     },
     fontFamily: {
-      adelia: ["BROWN", "sans-serif"],
+      brown: ["BROWN", "sans-serif"],
     },
   },
   plugins: [],
