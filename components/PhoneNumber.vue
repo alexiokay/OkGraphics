@@ -1,8 +1,9 @@
 <template lang="pug">
 div#contact(class="w-full  bg-[#ffee32] h-32 flex justify-center items-center p-[5px] rounded-2xl ")
     div(class="w-full bg-[#ffc300] h-full rounded-xl flex flex-row justify-center  ")
-        div(class="w-[94%] h-full flex")
-            img(src="https://allbor.pl/wp-content/uploads/2022/01/wizytowa-01.jpg")
+        div(class="w-[94%] h-full flex items-center")
+            div(class="flex justify-center items-center h-20 w-20 rounded-full bg-white")
+                IconPhone2(class="w-[2rem] h-[2rem] text-slate-800")
             div(class="flex flex-col items-start justify-center ml-4 text-black space-y-2")
                 div(class="flex hover:cursor-pointer space-x-2")
                     IconPhone(@click="callNumber" class="text-blue-700 w-6 h-6")
@@ -18,6 +19,7 @@ div#contact(class="w-full  bg-[#ffee32] h-32 flex justify-center items-center p-
 <script setup lang="ts">
 import IconFb from "~icons/ic/baseline-facebook";
 import IconPhone from "~icons/ic/baseline-phone";
+import IconPhone2 from "~icons/uil/phone-volume";
 import IconEmail from "~icons/material-symbols/alternate-email";
 
 const openFBPage = () => {

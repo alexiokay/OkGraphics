@@ -1,9 +1,16 @@
 <template lang="pug">
 div#smart-button(class="hover:bg-[#d6d6d6]  hover:cursor-pointer w-full h-14 flex justify-center items-center text-2xl text-black font-brown bg-[#ffd100]")
-    p ZAMÓW
+    p {{props.text}}
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const props = defineProps({
+  text: {
+    type: String,
+    required: true,
+  },
+});
+</script>
 
 <style lang="sass">
 #smart-button

@@ -29,7 +29,7 @@ div(class=" w-full  flex flex-col  bg-[#d6d6d6]")
           
 
       hr(class="mt-6")
-      <SmartButton class="mt-8"/>
+      <SmartButton text="ZAMÓW" class="mt-8"/>
       p(class="text-white text-center text-xl font-brown mt-8 ") Twoj grafik komputerowy
       hr(class="mt-12")
 

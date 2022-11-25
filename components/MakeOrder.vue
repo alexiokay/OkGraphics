@@ -29,7 +29,7 @@ div#order(class="w-full h-max  p-5 bg-[#333533]")
     div#order-send(class='flex flex-row mt-12')
 
    
-    <SmartButton/>
+    <SmartButton text="Wyślij"/>
 </template>
 
 <script setup lang="ts"></script>
