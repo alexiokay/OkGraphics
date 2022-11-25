@@ -1,5 +1,5 @@
 <template lang="pug">
-div#smart-button(class="hover:bg-[#d6d6d6]  hover:cursor-pointer w-full h-14 flex justify-center items-center text-2xl text-black font-brown bg-[#ffd100]")
+div#smart-button(class="hover:bg-[#d6d6d6]  hover:cursor-pointer w-full h-14 flex justify-center items-center text-2xl text-black font-adelia bg-[#ffd100]")
     p {{props.text}}
 </template>
 
