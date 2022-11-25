@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: "Brown";
-    src: url("../fonts/brown-bold.tff");
-  }
-
+  font-family: "Brown";
+  src: url(~/fonts/brown-bold.tff);
+}
