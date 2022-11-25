@@ -240,6 +240,7 @@ onMounted(() => {
 
 #header
   background-image: url(~/assets/images/header.webp)
+  background-size: cover
 
   background-position: bottom
   background-repeat: no-repeat
