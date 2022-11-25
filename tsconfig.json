@@ -1,0 +1,24 @@
+{
+  // https://v3.nuxtjs.org/concepts/typescript
+  "extends": "./.nuxt/tsconfig.json",
+  "compilerOptions": {
+    
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "types": [
+      "@pinia/nuxt",
+      "unplugin-icons/types/vue",
+      "pinia-plugin-persist",
+      "pinia"
+
+    ],
+    "paths": {
+      "@/*": [
+       "./*"
+      ]
+     }
+  },
+  "allowSyntheticDefaultImports": true,
+  "exclude": ["node_modules"]
+}
