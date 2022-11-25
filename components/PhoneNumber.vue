@@ -2,7 +2,7 @@
 div#contact(class="w-full  bg-[#ffee32] h-32 flex justify-center items-center p-[5px] rounded-2xl ")
     div(class="w-full bg-[#ffc300] h-full rounded-xl flex flex-row justify-center  ")
         div(class="w-[94%] h-full flex items-center")
-            div(class="flex justify-center items-center h-20 w-20 rounded-full bg-white")
+            div(class="flex justify-center items-center h-10 w-10 sm:h-20 sm:w-20 rounded-full bg-white")
                 IconPhone2(class="w-[2rem] h-[2rem] text-slate-800")
             div(class="flex flex-col items-start justify-center ml-4 text-black space-y-2")
                 div(class="flex hover:cursor-pointer space-x-2")
