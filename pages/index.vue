@@ -3,7 +3,8 @@ div(class=" w-full  flex flex-col  bg-[#d6d6d6]")
   div#contact-mini(class=" hidden xl:flex xl:flex-col mt-5 xl:fixed xl:top-[79vh] xl:left-[2%] ")
     IconPhone( class=" w-9 h-9 text-blue-600 hover:cursor-pointer")
     IconEmail(class="  w-9 h-9 text-blue-600 hover:cursor-pointer ")
-    IconFb(@click="openFBPage" class="w-9 h-9 text-blue-600 hover:cursor-pointer")
+    a(href="https://www.facebook.com/profile.php?id=100088083068376")
+      IconFb( class="w-9 h-9 text-blue-600 hover:cursor-pointer")
    
   
   <SliderPortfolio class="top-[-2000px]" @close="unCoverPage"/>
@@ -23,8 +24,8 @@ div(class=" w-full  flex flex-col  bg-[#d6d6d6]")
       div#offert-elements(class="flex flex-row w-full h-42 mt-16 items-center justify-around ")
         
 
-          <WorkComponent  @click="coverPage" title='Loga' image="/images/header1-compressed.webp" />
-          <WorkComponent  @click="coverPage"  title='Wizytówki' image="/images/wizytowki/Wizytówka-Informatyk.webp" />
+          <WorkComponent  @click="coverPage" title='Loga' image="/images/header1-compressed.webp" alt="loga" />
+          <WorkComponent  @click="coverPage"  title='Wizytówki' image="/images/wizytowki/Wizytówka-Informatyk.webp" alt="wizytowki" />
           <WorkComponent  @click="coverPage"  title='Ulotki' image="https://allbor.pl/wp-content/uploads/2022/01/King-garage-dobre-02-01.jpg" />
           
 
@@ -101,13 +102,6 @@ const clearCoverPageStyle = () => {
 };
 
 const closeSlider = () => {};
-
-const openFBPage = () => {
-  window.open(
-    "https://www.facebook.com/profile.php?id=100088083068376",
-    "_blank"
-  );
-};
 
 onMounted(() => {
   const navPortfolio = document.querySelector("#nav-portfolio");
