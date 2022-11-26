@@ -34,7 +34,7 @@ div#order(class="w-full h-max  p-5 bg-[#333533]")
                 p(v-if="messageError === false" class="text-green-600") Poprawnie
             
             textarea#message(@input="updateMessage($event.target.value)" class="w-full h-full bg-[#d6d6d6] border-white border-[1px] rounded-md p-2 ") 
-    div#order-policy(class='flex flex-col h-12 mt-12')
+    div#order-policy(class='flex flex-col  mt-12')
         div(class='flex space-x-1')
                 p(class="text-white text-lg mb-2 font-adelia") Polityka prywatności 
                 p(class="text-yellow-400 text-lg mb-2 font-adelia") *
