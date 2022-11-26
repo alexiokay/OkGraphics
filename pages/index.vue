@@ -51,6 +51,10 @@ import IconPhone from "~icons/ic/baseline-phone";
 import IconEmail from "~icons/material-symbols/alternate-email";
 import { onMounted } from "vue";
 const router = useRouter();
+const config = useRuntimeConfig();
+
+console.log(config.BASE_URL);
+console.log("sd");
 </script>
 
 <style lang="sass">

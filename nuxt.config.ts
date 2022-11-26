@@ -3,9 +3,16 @@ import Icons from "unplugin-icons/vite";
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  modules: ["@nuxtjs/tailwindcss"],
+  modules: ["@nuxtjs/tailwindcss", "@nuxt/content"],
+  content: {
+    // https://content.nuxtjs.org/api/configuration
+  },
+
   nitro: {
     prerender: {
+      prerender: {
+        routes: ["/sitemap.xml"],
+      },
       crawlLinks: true,
       routes: ["/"],
     },
@@ -44,5 +51,11 @@ export default defineNuxtConfig({
         autoInstall: true,
       }),
     ],
+  },
+
+  runtimeConfig: {
+    public: {
+      BASE_URL: process.env.BASE_URL,
+    },
   },
 });
