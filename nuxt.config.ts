@@ -1,8 +1,9 @@
-import { defineNuxtConfig } from "nuxt";
+import { defineNuxtConfig } from "nuxt/config";
 import Icons from "unplugin-icons/vite";
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
+  modules: ["@nuxtjs/tailwindcss"],
   nitro: {
     prerender: {
       crawlLinks: true,
@@ -33,17 +34,6 @@ export default defineNuxtConfig({
   },
 
   buildModules: ["@pinia/nuxt"],
-
-  build: {
-    postcss: {
-      postcssOptions: {
-        plugins: {
-          tailwindcss: {},
-          autoprefixer: {},
-        },
-      },
-    },
-  },
 
   css: ["@/assets/css/styles.css"],
 

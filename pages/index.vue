@@ -51,7 +51,6 @@ import IconPhone from "~icons/ic/baseline-phone";
 import IconEmail from "~icons/material-symbols/alternate-email";
 import { onMounted } from "vue";
 const router = useRouter();
-
 </script>
 
 <style lang="sass">
