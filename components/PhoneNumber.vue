@@ -8,9 +8,11 @@ div#contact(class="w-full  bg-[#ffee32] h-32 flex justify-center items-center p-
                 div(class="flex hover:cursor-pointer space-x-2")
                     IconPhone(@click="callNumber" class="text-blue-700 w-6 h-6")
                     p 798 832 807
-                div(@click="sendEmail" class="flex space-x-2 hover:cursor-pointer")
-                    IconEmail(class="text-white w-6 h-6 ")
-                    div#email(@click="showEmail") show email
+                
+                div( class="flex space-x-2 hover:cursor-pointer")
+                    IconEmail(@click="sendEmail" class="text-white w-6 h-6 ")
+                    p(@click="showEmail" v-if="!isEmailVisible") show email
+                    div#email(@click="sendEmail")
                       p(v-if="isEmailVisible") graphicdesigner@gmail.com
                 div(@click='openFBPage' class="flex space-x-2 hover:cursor-pointer")
                     IconFb( class="text-blue-600 w-6 h-6 ")

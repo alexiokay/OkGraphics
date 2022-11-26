@@ -1,6 +1,6 @@
 <template lang="pug">
 div(class=" w-full  flex flex-col  bg-[#d6d6d6]")
-h1(v-show="false") Ok Graphics, twój zdalny doświadczony grafik komputerowy.
+  h1(v-show="false") Ok Graphics, twój zdalny doświadczony grafik komputerowy.
   div#contact-mini(class=" hidden xl:flex xl:flex-col mt-5 xl:fixed xl:top-[79vh] xl:left-[2%] ")
     IconPhone( class=" w-9 h-9 text-blue-600 hover:cursor-pointer")
     IconEmail(class="  w-9 h-9 text-blue-600 hover:cursor-pointer ")
