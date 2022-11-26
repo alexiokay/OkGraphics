@@ -1,5 +1,6 @@
 <template lang="pug">
 div(class=" w-full  flex flex-col  bg-[#d6d6d6]")
+h1(v-show="false") Ok Graphics, twój zdalny doświadczony grafik komputerowy.
   div#contact-mini(class=" hidden xl:flex xl:flex-col mt-5 xl:fixed xl:top-[79vh] xl:left-[2%] ")
     IconPhone( class=" w-9 h-9 text-blue-600 hover:cursor-pointer")
     IconEmail(class="  w-9 h-9 text-blue-600 hover:cursor-pointer ")
@@ -14,7 +15,7 @@ div(class=" w-full  flex flex-col  bg-[#d6d6d6]")
     div(class="flex h-full flex-col w-[95%]  mt-8 rounded-md ") 
       div#header(class=" h-[35rem] sm:h-[33rem] w-full bg-[#d6d6d6] shadow-xl flex flex-col items-center justify-center")
         div#header-content(class=" w-full h-[90%] md:h-[100%] flex flex-col items-center justify-around text-white")
-          h1(class=" text-6xl md:text-8xl  font-bold mt-4  text-[#CFB53B] text-center") Ok Graphics
+          h2(class=" text-6xl md:text-8xl  font-bold mt-4  text-[#CFB53B] text-center") Ok Graphics
           h2(class=" text-xl md:text-3xl font-adelia font-medium text-center") TWÓJ ZDALNY GRAFIK KOMPUTEROWY
           div(class="w-full flex flex-col items-center justify-center mb-16")
             button#header-button( class="border-2 h-16 w-44 hover:bg-[#CFB53B] hover:border-[#CFB53B]  border-[#CFB53B] text-2xl font-adelia text-white") Galeria
@@ -52,131 +53,9 @@ import IconEmail from "~icons/material-symbols/alternate-email";
 import { onMounted } from "vue";
 const router = useRouter();
 const config = useRuntimeConfig();
-
-console.log(config.BASE_URL);
-console.log("sd");
 </script>
 
 <style lang="sass">
-
-
-.page-covered-top-down
-  position: fixed
-  top: 0px
-  z-index: 1000
-  animation-name: coverPage-top-down
-  animation-duration: 1s
-
-.page-covered-down-top
-  position: fixed
-  top: 0px
-  z-index: 1000
-  animation-name: coverPage-down-top
-  animation-duration: 1s
-
-.page-covered-left-right
-  position: fixed
-  top: 0px
-  z-index: 1000
-  animation-name: coverPage-left-right
-  animation-duration: 1s
-
-.page-covered-right-left
-  position: fixed
-  top: 0px
-  z-index: 1000
-  animation-name: coverPage-right-left
-  animation-duration: 1s
-
-@keyframes coverPage-top-down
-  0%
-    top: -100vh
-
-  100%
-    top: 0vh
-
-@keyframes coverPage-down-top
-  0%
-    top: 200vh
-
-  100%
-    top: 0vh
-
-
-@keyframes coverPage-left-right
-  0%
-    left: -200vh
-
-  100%
-    left: 0vh
-
-
-@keyframes coverPage-right-left
-  0%
-    left: 200vh
-
-  100%
-    left: 0vh
-
-
-
-.page-uncovered-top-down
-  position: fixed
-  top: 0px
-  z-index: 1000
-  animation-name: uncoverPage-top-down
-  animation-duration: 1s
-
-.page-uncovered-down-top
-  position: fixed
-  top: 0px
-  z-index: 1000
-  animation-name: uncoverPage-down-top
-  animation-duration: 1s
-
-.page-uncovered-left-right
-  position: fixed
-  top: 0px
-  z-index: 1000
-  animation-name: uncoverPage-left-right
-  animation-duration: 1s
-
-.page-uncovered-right-left
-  position: fixed
-  top: 0px
-  z-index: 1000
-  animation-name: uncoverPage-right-left
-  animation-duration: 1s
-
-@keyframes uncoverPage-top-down
-  0%
-    top: 0vh
-
-  100%
-    top: -100vh
-
-@keyframes uncoverPage-down-top
-  0%
-    top: 0vh
-
-  100%
-    top: 200vh
-
-
-@keyframes uncoverPage-left-right
-  0%
-    left: 0vh
-
-  100%
-    left: -200vh
-
-
-@keyframes uncoverPage-right-left
-  0%
-    left: 0vh
-
-  100%
-    left: 200vh
 
 #header
   background-image: url(~/assets/images/header.webp)
