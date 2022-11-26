@@ -1,20 +1,39 @@
 <template lang="pug">
-div(class=" w-full h-screen flex flex-col")
-    h1 Sprawdz moje poprzednie prace
-    h2 Kazdy doswiadczony grafik, musi mieć co pokazać, nie każdy ma co, ja mam zobacz!
+div(class=" w-full  flex flex-col  bg-[#d6d6d6]")
 
-    p(class="text-white  px-8 text-xl hover:cursor-pointer bg-[#202020] h-[7rem] flex items-center" @click="$emit('close')") X
+  div(class="flex flex-row h-full justify-center mt-16 md:mt-20 mb-12  ")
+    div(class="flex h-full items-center p-10 flex-col w-full sm:w-[96%] xl:w-[87%] justify-center rounded-md bg-[#202020]")
+      h1(class="w-[95%] text-white text-xl ") Wizytowki
+      ClientOnly
+        LazySwiper(:slides="wizytowki")
+      h1(class="w-[95%] text-white text-xl ") Ulotki
+      ClientOnly
+        LazySwiper(:slides="ulotki")
 
-    div(class="flex flex-row w-full")
-        <PortfolioComponent @click="coverPage()" image="https://64.media.tumblr.com/f8d8dba355692b8a1a133c6a2d00e195/3633398f083eee6e-a7/s1280x1920/aba4c6a18b9b206166a8e9f48da72904133d940f.jpg"/>
-        <PortfolioComponent @click="coverPage()" image="https://64.media.tumblr.com/a2428dbcdd3797cef4d73aed60d0b903/4f07cee55e20df22-61/s1280x1920/caa4194d7b7c2a91bf80e035563081688924cb70.jpg"/>
-        <PortfolioComponent @click="coverPage()" image="https://64.media.tumblr.com/43c0d86336549e20e53b5570deae2986/542e2b843a1f4051-41/s1280x1920/f9552020b279b6b0c650672e01cc9f456d17dee9.jpg"/>
-        <PortfolioComponent @click="coverPage()" image="https://64.media.tumblr.com/926b3486fe9be56e44a040120dab634c/6916b4b40651da36-59/s1280x1920/1e1d85e19c0aad66b7eb7a0f83be9e2c95e7207e.jpg"/>
-        <PortfolioComponent @click="coverPage()" image="https://64.media.tumblr.com/007127fd676aad80bf6a9fee5fe417e5/d911bebebf07f83e-24/s1280x1920/962489ba49c4c8c0274110165148286ce033066c.jpg"/>
+      SmartButton(text="Złóż zamówienie" class="mt-12" @click="toMakeOrder")
+
+
+
 
 </template>
 
 <script setup lang="ts">
+import { wizytowki, ulotki } from "../libs/sliders";
+const router = useRouter();
+
+const toMakeOrder = () => {
+  router.push({ name: "index" });
+  setTimeout(() => {
+    scrollToMakeOrder();
+  }, 200);
+};
+
+const scrollToMakeOrder = () => {
+  const contact = document?.getElementById("order");
+  contact?.scrollIntoView({ behavior: "smooth" });
+  contact?.classList.add("shake");
+};
+
 useHead({
   title: "Ok Graphics - Portfolio",
   meta: [{ name: "description", content: "Moje poprzednie prace" }],

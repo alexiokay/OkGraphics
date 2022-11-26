@@ -4,6 +4,10 @@ import Icons from "unplugin-icons/vite";
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   modules: ["@nuxtjs/tailwindcss", "@nuxt/content"],
+  build: {
+    transpile: ["swiper"],
+  },
+
   content: {
     // https://content.nuxtjs.org/api/configuration
   },
@@ -11,7 +15,7 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       crawlLinks: true,
-      routes: ["/", "/sitemap.xml"],
+      routes: ["/", "/sitemap.xml", "/portfolio"],
     },
   },
   ssr: true, // <

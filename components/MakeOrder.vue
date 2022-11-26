@@ -52,6 +52,7 @@ div#order(class="w-full h-max  p-5 bg-[#333533]")
 
 <script setup lang="ts">
 import { ref } from "vue";
+import type { Ref } from "vue";
 
 const message = ref("");
 const customerEmail = ref("");
@@ -59,11 +60,12 @@ const customerName = ref("");
 const customerSurname = ref("");
 const customerPhone = ref("");
 
-const emailError = ref(null);
-const phoneError = ref(null);
-const messageError = ref(null);
-const isPolicyAccepted = ref(null);
+const emailError: Ref<boolean | null> = ref(null);
+const phoneError: Ref<boolean | null> = ref(null);
+const messageError: Ref<boolean | null> = ref(null);
+const isPolicyAccepted: Ref<boolean | null> = ref(null);
 
+onMounted(() => {});
 const updateMessage = (text: any) => {
   validateMessage();
   message.value = text;
