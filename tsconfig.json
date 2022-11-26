@@ -9,7 +9,7 @@
     "types": [
       "@pinia/nuxt",
       "unplugin-icons/types/vue",
-      "pinia-plugin-persist",
+      //"pinia-plugin-persist",
       "pinia"
 
     ],

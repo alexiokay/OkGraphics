@@ -7,7 +7,7 @@ div(class=" w-full  flex flex-col  bg-[#d6d6d6]")
       IconFb( class="w-9 h-9 text-blue-600 hover:cursor-pointer")
    
   
-  <SliderPortfolio class="top-[-2000px]" @close="unCoverPage"/>
+  <SliderPortfolio class="top-[-2000px]" />
 
   div(class="flex flex-row h-full justify-center mt-16 md:mt-20 mb-12  ")
    div(class="flex h-full flex-row w-full sm:w-[96%] xl:w-[87%] justify-center rounded-md bg-[#202020]")
@@ -17,16 +17,16 @@ div(class=" w-full  flex flex-col  bg-[#d6d6d6]")
           h1(class=" text-6xl md:text-8xl  font-bold mt-4  text-[#CFB53B] text-center") Ok Graphics
           h2(class=" text-xl md:text-3xl font-adelia font-medium text-center") TWÓJ ZDALNY GRAFIK KOMPUTEROWY
           div(class="w-full flex flex-col items-center justify-center mb-16")
-            button#header-button(@click="coverPage" class="border-2 h-16 w-44 hover:bg-[#CFB53B] hover:border-[#CFB53B]  border-[#CFB53B] text-2xl font-adelia text-white") Galeria
+            button#header-button( class="border-2 h-16 w-44 hover:bg-[#CFB53B] hover:border-[#CFB53B]  border-[#CFB53B] text-2xl font-adelia text-white") Galeria
             div(class="w-full flex flex-col justify-center mt-8")
               h3(class="text-xl font-adelia font-semibold text-center  ") Zaprojektuję dla Ciebie wyjątkowe i niepowtarzalne prace graficzne. 
               h3(class="text-xl font-adelia font-semibold text-center ") Dzięki temu twoja firma stanie się rozpoznawalna!
       div#offert-elements(class="flex flex-row w-full h-42 mt-16 items-center justify-around ")
         
 
-          <WorkComponent  @click="coverPage" title='Loga' image="/images/header1-compressed.webp" alt="loga" />
-          <WorkComponent  @click="coverPage"  title='Wizytówki' image="/images/wizytowki/Wizytówka-Informatyk.webp" alt="wizytowki" />
-          <WorkComponent  @click="coverPage"  title='Ulotki' image="https://allbor.pl/wp-content/uploads/2022/01/King-garage-dobre-02-01.jpg" />
+          <WorkComponent   title='Loga' image="/images/header1-compressed.webp" alt="loga" />
+          <WorkComponent    title='Wizytówki' image="/images/wizytowki/Wizytówka-Informatyk.webp" alt="wizytowki" />
+          <WorkComponent   title='Ulotki' image="https://allbor.pl/wp-content/uploads/2022/01/King-garage-dobre-02-01.jpg" />
           
 
       hr(class="mt-6")
@@ -52,63 +52,6 @@ import IconEmail from "~icons/material-symbols/alternate-email";
 import { onMounted } from "vue";
 const router = useRouter();
 
-function getRandomInt(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min) + min); // The maximum is exclusive and the minimum is inclusive
-}
-
-const coverPage = () => {
-  const SliderPortfolio = document.querySelector<HTMLElement>("#coverpage");
-
-  clearCoverPageStyle();
-  const mode = getRandomInt(0, 4);
-  console.log(mode);
-  if (mode === 0) SliderPortfolio.classList.add("page-covered-top-down");
-  if (mode === 1) SliderPortfolio.classList.add("page-covered-down-top");
-  if (mode === 2) SliderPortfolio.classList.add("page-covered-left-right");
-  if (mode === 3) SliderPortfolio.classList.add("page-covered-right-left");
-
-  SliderPortfolio.addEventListener("animationend", function (ev) {
-    document.body.style.overflow = "hidden";
-    SliderPortfolio.removeEventListener("animationend", function (ev) {});
-  });
-};
-
-const unCoverPage = () => {
-  document.body.style.overflow = "visible";
-  const SliderPortfolio = document.querySelector<HTMLElement>("#coverpage");
-  clearCoverPageStyle();
-  const mode = getRandomInt(0, 4);
-  if (mode === 0) SliderPortfolio.classList.add("page-uncovered-top-down");
-  if (mode === 1) SliderPortfolio.classList.add("page-uncovered-down-top");
-  if (mode === 2) SliderPortfolio.classList.add("page-uncovered-left-right");
-  if (mode === 3) SliderPortfolio.classList.add("page-uncovered-right-left");
-
-  SliderPortfolio.addEventListener("animationend", function (ev) {
-    if (ev.animationName.includes("uncoverPage")) {
-      clearCoverPageStyle();
-      document.body.style.overflow = "visible";
-    }
-  });
-};
-
-const clearCoverPageStyle = () => {
-  const SliderPortfolio = document.querySelector<HTMLElement>("#coverpage");
-  SliderPortfolio.classList.forEach((item) => {
-    if (item.includes("page-covered") || item.includes("page-uncovered"))
-      SliderPortfolio.classList.remove(item);
-  });
-};
-
-const closeSlider = () => {};
-
-onMounted(() => {
-  const navPortfolio = document.querySelector("#nav-portfolio");
-  navPortfolio.addEventListener("click", () => {
-    coverPage();
-  });
-});
 </script>
 
 <style lang="sass">

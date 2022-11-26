@@ -7,9 +7,9 @@ div#navbar-wrapper(class=" w-full h-[7rem] flex items-center justify-between lg:
     div#navbar-empty(class=" w-[0px] lg:w-[22%] h-full flex items-center justify-center mx-0")
     div#navbar-content(class="  lg:w-[44%] w-[66%] h-full flex items-center justify-around mx-0 tracking-wider text-white font-brown  font-normal ")
     
-      NuxtLink(class="navbar-text  hidden sm:block  hover:text-blue-700 " to="index") O MNIE
+      NuxtLink(class="navbar-text  hidden sm:block  hover:text-blue-700 " to="/") O MNIE
       NuxtLink(class="navbar-text  hidden sm:block  hover:text-blue-700 " to="portfolio") Portfolio
-      NuxtLink(class="navbar-text  hidden sm:block  hover:text-blue-700 " to="pricing}") Cennik
+      NuxtLink(class="navbar-text  hidden sm:block  hover:text-blue-700 " to="pricing") Cennik
       p(class="navbar-text  hidden sm:block hover:text-blue-700 "  @click='scrollToContact') KONTAKT
     div#navbar-empty(class=" w-[0px]  lg:w-[30%] h-full  flex items-center justify-center mx-0")
     
