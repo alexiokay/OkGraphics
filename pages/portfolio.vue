@@ -1,5 +1,7 @@
 <template lang="pug">
 div(class=" w-full h-screen flex flex-col")
+    h1 Sprawdz moje poprzednie prace
+    h2 Kazdy doswiadczony grafik, musi mieć co pokazać, nie każdy ma co, ja mam zobacz!
 
     p(class="text-white  px-8 text-xl hover:cursor-pointer bg-[#202020] h-[7rem] flex items-center" @click="$emit('close')") X
 
@@ -12,6 +14,11 @@ div(class=" w-full h-screen flex flex-col")
 
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+useHead({
+  title: "Ok Graphics - Portfolio",
+  meta: [{ name: "description", content: "Moje poprzednie prace" }],
+});
+</script>
 
 <style lang="sass"></style>
