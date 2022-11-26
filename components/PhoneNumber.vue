@@ -10,7 +10,8 @@ div#contact(class="w-full  bg-[#ffee32] h-32 flex justify-center items-center p-
                     p 798 832 807
                 div(@click="sendEmail" class="flex space-x-2 hover:cursor-pointer")
                     IconEmail(class="text-white w-6 h-6 ")
-                    p#email 
+                    div#email(@click="showEmail") show email
+                      p(v-if="isEmailVisible") graphicdesigner@gmail.com
                 div(@click='openFBPage' class="flex space-x-2 hover:cursor-pointer")
                     IconFb( class="text-blue-600 w-6 h-6 ")
                     p Ok Graphics
@@ -21,7 +22,9 @@ import IconFb from "~icons/ic/baseline-facebook";
 import IconPhone from "~icons/ic/baseline-phone";
 import IconPhone2 from "~icons/uil/phone-volume";
 import IconEmail from "~icons/material-symbols/alternate-email";
-import { onMounted } from "vue";
+import { ref } from "vue";
+
+let isEmailVisible = ref(false);
 
 const openFBPage = () => {
   window.open(
@@ -30,10 +33,9 @@ const openFBPage = () => {
   );
 };
 
-onMounted(() => {
-  const email = document.getElementById("email");
-  if (email) email.textContent = "graphicdesigner@gmail.com";
-});
+const showEmail = () => {
+  isEmailVisible.value = true;
+};
 
 const sendEmail = () => {
   document.location = "mailto:graphicdesigner@gmail.com";
