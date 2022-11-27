@@ -1,12 +1,7 @@
 <template lang="pug">
 div(class=" w-full  flex flex-col  bg-[#d6d6d6]")
   h1(v-show="false") Ok Graphics, twój zdalny doświadczony grafik komputerowy.
-  div#contact-mini(class=" hidden xl:flex xl:flex-col mt-5 xl:fixed xl:top-[79vh] xl:left-[2%] ")
-    IconPhone( class=" w-9 h-9 text-blue-600 hover:cursor-pointer")
-    IconEmail(@click="sendEmail" class="  w-9 h-9 text-blue-600 hover:cursor-pointer ")
-    a(href="https://www.facebook.com/profile.php?id=100088083068376")
-      IconFb( class="w-9 h-9 text-blue-600 hover:cursor-pointer")
-   
+
 
 
   div(class="flex flex-row h-full justify-center mt-16 md:mt-20 mb-12  ")
@@ -24,40 +19,24 @@ div(class=" w-full  flex flex-col  bg-[#d6d6d6]")
       div#offert-elements(class="flex flex-row w-full h-42 mt-16 items-start justify-around ")
         
 
-          <WorkComponent   title='Loga' image="/images/header1-compressed.webp" alt="loga" description="To jak się prezentujesz, wpływana pierwsze wrażenie. Ludzie w świecie biznesu mają tylko chwilę żeby Ciebie zauważyć. Czy Twoje Logodobrze się prezentuje?" />
-          <WorkComponent    title='Wizytówki' image="/images/wizytowki/Wizytówka-Informatyk.webp" alt="wizytowki" description="Kiedy dojdzie do pierwszego spotkania, masz szanse zdobyć czyjeś zaufanie. Wizytówka to twoja pierwsza rozmowaz potencjalnym klientem. Czy korzystaszz jej najlepszej formy?" />
-          <WorkComponent   title='Ulotki' image="https://allbor.pl/wp-content/uploads/2022/01/King-garage-dobre-02-01.jpg" description="Co gdy zdobędziesz czyjeś zaufanie?Jego wzbudzenie to wiele, lecz to może nie wystarczyć. Czy zrobiłeś wszystko żeby przekonać klienta do owocnej współpracy?"/>
+      
           
 
-      hr(class="mt-6")
-      <SmartButton text="ZAMÓW" class="mt-8"/>
-      p(class="text-white text-center text-xl font-adelia mt-8 ") Twoj grafik komputerowy
-      hr(class="mt-12")
+     
+     
+     
+ 
 
-      <MakeOrder class="mt-12"/>
-
-      hr(class="mt-8")
-
-      <PhoneNumber class="mt-8"/>
-      div( class="flex space-x-2 hover:cursor-pointer text-white text-xl mt-2 font-adelia")
-        p Dni/godziny pracy: Od poniedziałku do soboty, 10:00-20:00
-
-      div.button(class="hover:cursor-pointer rounded-md w-full font-adelia h-12 flex justify-center items-center text-lg text-white text-center bg-[#202020] mb-8 mt-8")
+      div.button(class="hover:cursor-pointer rounded-md w-full font-adelia h-12 flex justify-center items-center text-lg text-white text-center bg-[#CFB53B] mb-8 ")
         p Odwiedź również stronę WebGod – STRONY INTERNETOWE ORAZ APLIKACJE
+  
+
+
+      
 
 </template>
 
-<script lang="ts" setup>
-import IconFb from "~icons/ic/baseline-facebook";
-import IconPhone from "~icons/ic/baseline-phone";
-import IconEmail from "~icons/material-symbols/alternate-email";
-import { onBeforeMount } from "vue";
-const router = useRouter();
-
-const sendEmail = () => {
-  document.location = "mailto:graphicdesigner@gmail.com";
-};
-</script>
+<script lang="ts" setup></script>
 
 <style lang="sass">
 

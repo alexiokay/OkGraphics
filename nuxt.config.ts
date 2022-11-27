@@ -4,8 +4,9 @@ import Icons from "unplugin-icons/vite";
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   modules: ["@nuxtjs/tailwindcss", "@nuxt/content"],
+
   build: {
-    transpile: ["swiper"],
+    transpile: ["swiper", "@googlemaps/js-api-loader"],
   },
 
   content: {
@@ -56,7 +57,10 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
+      GOOGLE_MAPS_API_KEY: process.env.GOOGLE_MAPS_API_KEY,
+      cwd: process.cwd(),
       BASE_URL: process.env.BASE_URL,
+      STORYBLOK_API_KEY: process.env.STORYBLOK_API_KEY,
     },
   },
 });

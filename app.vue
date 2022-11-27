@@ -8,5 +8,4 @@
 
 <style lang="sass"></style>
 
-
 // INSPIRED BY https://www.malikafavre.com/
