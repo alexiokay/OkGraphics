@@ -1,7 +1,7 @@
 export const wizytowki = [
   {
     name: "Slide 1",
-    img: "images/header-img.jpg",
+    img: "../images/header-img.jpg",
   },
   {
     name: "Slide 2",
