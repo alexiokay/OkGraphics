@@ -20,8 +20,6 @@ div(class=" w-full  flex flex-col  bg-[#d6d6d6]")
         LazySwiper(:slides="ulotki")
         
 
-      SmartButton(text="Złóż zamówienie" class="mt-12" @click="toMakeOrder")
-
 
 
 
