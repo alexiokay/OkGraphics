@@ -5,7 +5,7 @@ export const wizytowki = [
   },
   {
     name: "Slide 2",
-    img: "images/wizytowki/Wizytówka-Informatyk.webp",
+    img: "../images/wizytowki/Wizytówka-Informatyk.webp",
   },
   {
     name: "Slide 3",
@@ -20,11 +20,11 @@ export const wizytowki = [
 export const ulotki = [
   {
     name: "Slide 1",
-    img: "images/header-img.jpg",
+    img: "../images/header-img.jpg",
   },
   {
     name: "Slide 2",
-    img: "images/wizytowki/Wizytówka-Informatyk.webp",
+    img: "../images/wizytowki/Wizytówka-Informatyk.webp",
   },
   {
     name: "Slide 3",
