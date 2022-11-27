@@ -1,7 +1,7 @@
 <template lang="pug">
 div(class=" w-full  flex flex-col  bg-[#d6d6d6]")
     div(class="flex flex-row h-full justify-center mt-16 md:mt-20 mb-12  ")
-        div(class="flex flex-row flex-wrap h-full items-start p-4 md:p-10  w-full sm:w-[96%] xl:w-[87%] justify-around rounded-md bg-[#202020]")
+        div(class="flex flex-col md:flex-row flex-wrap h-full items-center md:items-start p-4 md:p-10  w-full sm:w-[96%] xl:w-[87%] justify-around rounded-md bg-[#202020]")
          
           div#pricing-table( class="w-1/2 justify-center flex flex-col text-white items-center mt-12 ")
             h3(class="underline text-xl mb-3 text-[#CFB53B]") MARKETING

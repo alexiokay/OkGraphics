@@ -1,9 +1,9 @@
 <template lang="pug">
 div(class=" w-full h-full flex flex-col  bg-[#d6d6d6]")
     div(class="flex flex-row h-full justify-center mt-16 md:mt-20 mb-12  ")
-        div(class="flex h-full items-start p-10 flex-row w-full sm:w-[96%] xl:w-[87%] justify-center rounded-md bg-[#202020]")
-            <div class="map w-3/5 h-[69vh]" id="map" ></div>
-            div(class=" w-2/5 h-[69vh] text-white flex flex-col justify-start items-start p-10")
+        div(class="flex h-full items-start p-10 flex-col md:flex-row w-full sm:w-[96%] xl:w-[87%] justify-center rounded-md bg-[#202020]")
+            <div class="map  w-full md:w-3/5 h-[50vh] md:h-[69vh]" id="map" ></div>
+            div(class=" w-full md:w-2/5 h-[69vh] text-white flex flex-col justify-start items-start p-10")
                 div(class="flex flex-col items-start justify-center ml-4 text-white space-y-2")
                     div(class="flex hover:cursor-pointer space-x-2")
                         IconPhone(@click="callNumber" class="text-blue-700 w-6 h-6")
