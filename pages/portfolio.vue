@@ -17,7 +17,7 @@ div(class=" w-full  flex flex-col  bg-[#d6d6d6]")
         LazySwiper(:slides="wizytowki")
       h2(class="w-[95%] text-white text-3xl ") Ulotki
       ClientOnly
-        LazySwiper(:slides="ulotki")
+        LazySwiper(:slides="ulotki") 
         
 
 
