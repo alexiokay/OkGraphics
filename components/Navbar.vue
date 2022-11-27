@@ -1,6 +1,6 @@
 <template lang="pug">
 div#mobile-menu(v-if="mobileMenu === true" class="fixed top-0 left-0 md:hidden flex flex-col items-center  w-full h-screen bg-black opacity-95 z-50  ")
-  div(class="flex w-[80%] h-12 justify-end ")
+  div(class="flex w-[80%] h-[7rem] justify-end items-center ")
     button(@click="mobileMenu = false" class="text-white text-4xl") X
   div#mobile-menu-content(class="flex w-full h-full text-2xl text-white flex-col justify-start items-center")
     NuxtLink(@click="mobileMenu = false" class="navbar-text    hover:text-blue-700 mt-12" to="/") STRONA GLOWNA
