@@ -17,6 +17,7 @@ div#contact(class="w-full  bg-[#ffee32] h-32 flex justify-center items-center p-
                 div(@click='openFBPage' class="flex space-x-2 hover:cursor-pointer")
                     IconFb( class="text-blue-600 w-6 h-6 ")
                     p Ok Graphics
+               
 </template>
 
 <script setup lang="ts">

@@ -3,7 +3,7 @@ div(class=" w-full  flex flex-col  bg-[#d6d6d6]")
   h1(v-show="false") Ok Graphics, twój zdalny doświadczony grafik komputerowy.
   div#contact-mini(class=" hidden xl:flex xl:flex-col mt-5 xl:fixed xl:top-[79vh] xl:left-[2%] ")
     IconPhone( class=" w-9 h-9 text-blue-600 hover:cursor-pointer")
-    IconEmail(class="  w-9 h-9 text-blue-600 hover:cursor-pointer ")
+    IconEmail(@click="sendEmail" class="  w-9 h-9 text-blue-600 hover:cursor-pointer ")
     a(href="https://www.facebook.com/profile.php?id=100088083068376")
       IconFb( class="w-9 h-9 text-blue-600 hover:cursor-pointer")
    
@@ -39,11 +39,12 @@ div(class=" w-full  flex flex-col  bg-[#d6d6d6]")
       hr(class="mt-8")
 
       <PhoneNumber class="mt-8"/>
+      div( class="flex space-x-2 hover:cursor-pointer text-white text-xl mt-2 font-adelia")
+        p Dni/godziny pracy: Od poniedziałku do soboty, 10:00-20:00
 
       div.button(class="hover:cursor-pointer rounded-md w-full font-adelia h-12 flex justify-center items-center text-lg text-white text-center bg-[#202020] mb-8 mt-8")
         p Odwiedź również stronę WebGod – STRONY INTERNETOWE ORAZ APLIKACJE
-    
-  p  params: {{$route.query.scroll}}
+
 </template>
 
 <script lang="ts" setup>
@@ -52,7 +53,10 @@ import IconPhone from "~icons/ic/baseline-phone";
 import IconEmail from "~icons/material-symbols/alternate-email";
 import { onBeforeMount } from "vue";
 const router = useRouter();
-const config = useRuntimeConfig();
+
+const sendEmail = () => {
+  document.location = "mailto:graphicdesigner@gmail.com";
+};
 </script>
 
 <style lang="sass">
