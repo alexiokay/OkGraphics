@@ -5,8 +5,8 @@ div#mobile-menu(v-if="mobileMenu === true" class="fixed top-0 left-0 md:hidden f
   div#mobile-menu-content(class="flex w-full h-full text-2xl text-white flex-col justify-start items-center")
     NuxtLink(@click="mobileMenu = false" class="navbar-text    hover:text-blue-700 mt-12" to="/") STRONA GLOWNA
     NuxtLink(@click="mobileMenu = false" class="navbar-text  hover:text-blue-700 mt-8 " to="/about") O MNIE
-    NuxtLink(@click="mobileMenu = false" class="navbar-text  hover:text-blue-700 mt-8 " to="portfolio") PORTFOLIO
-    NuxtLink(@click="mobileMenu = false" class="navbar-text  hover:text-blue-700 mt-8 " to="pricing") CENNIK
+    NuxtLink(@click="mobileMenu = false" class="navbar-text  hover:text-blue-700 mt-8 " to="/portfolio") PORTFOLIO
+    NuxtLink(@click="mobileMenu = false" class="navbar-text  hover:text-blue-700 mt-8 " to="/pricing") CENNIK
     NuxtLink(@click="mobileMenu = false" class="navbar-text  hover:text-blue-700 mt-8 " to="/contact" ) KONTAKT
 div#navbar-wrapper(class=" w-full h-[7rem] flex items-center justify-between lg:justify-center mx-0 bg-[#202020]") 
 
