@@ -35,7 +35,7 @@ div(class=" w-full  flex flex-col  bg-[#d6d6d6]")
             p  Projekt graficzny ŻYWNOŚCI: 350zł
             p  Projekt graficzny KOSMETYKÓW: 350zł
             p  Projekt graficzny SUPLEMENTÓW: 350zł
-          div#pricing-table( class="w-1/2 justify-center flex flex-col text-white items-center mt-12")
+          div#pricing-table( class="w-1/2 justify-center flex flex-col text-center text-white items-center mt-12")
             h3(class="underline text-xl mb-3 text-[#CFB53B]") MEDIA SPOŁECZNOŚCIOWE
             p  Projekt graficzny POSTU NA INSTAGRAMIE/FACEBOOKU: 200zł
             p  Projekt graficzny RELACJI NA INSTAGRAMIE/FACEBOOKU: 200zł
@@ -49,7 +49,7 @@ div(class=" w-full  flex flex-col  bg-[#d6d6d6]")
             p  Projekt graficzny MINIATURKI: 250zł
             p  Projekt graficzny BANERA: 250zł
             p  Projekt graficzny AVATARA: 250zł
-          div#pricing-table( class="w-1/2 justify-center flex flex-col text-white items-center mt-12")
+          div#pricing-table( class="w-1/2 justify-center flex flex-col text-white items-center text-center mt-12")
             h3(class="underline text-xl mb-3 text-[#CFB53B]") PREZENTACJA
             p  Projekt graficzny PREZENTACJI MULTIMEDIALNEJ: 30zł (jeden slajd)
           div#pricing-table(class="w-1/2 justify-center flex flex-col text-white items-center mt-12")
