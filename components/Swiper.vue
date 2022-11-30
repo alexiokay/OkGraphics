@@ -55,8 +55,12 @@ onMounted(() => {
         spaceBetween: 20,
       },
       // when window width is >= 480px
-      640: {
+      720: {
         slidesPerView: 2.5,
+        spaceBetween: 30,
+      },
+      1180: {
+        slidesPerView: 3.5,
         spaceBetween: 30,
       },
       // when window width is >= 640px
@@ -73,6 +77,7 @@ onMounted(() => {
 
 
 .swiper-slide
+
   text-align: center
   font-size: 18px
   background: #fff
@@ -114,6 +119,7 @@ onMounted(() => {
 
 
 .swiper-slide
+  width: 40%
   text-align: center
   font-size: 18px
   background: #fff

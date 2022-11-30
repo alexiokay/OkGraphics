@@ -1,72 +1,100 @@
 <template lang="pug">
 div(class=" w-full  flex flex-col  bg-[#d6d6d6]")
     div(class="flex flex-row h-full justify-center mt-16 md:mt-20 mb-12  ")
-        div(class="flex flex-col md:flex-row flex-wrap h-full items-center md:items-start p-4 md:p-10  w-full sm:w-[96%] xl:w-[87%] justify-around rounded-md bg-[#202020]")
+      
+        div(class="flex flex-col md:flex-row space-x-3 flex-wrap h-full items-center md:items-start p-4 md:p-10  w-full sm:w-[96%] xl:w-[87%] justify-around rounded-md bg-[#202020]")
+          h1(class='w-full  text-4xl text-center text-white m-auto mb-6') CENNIK
+          
+          PricingTable(:elements="kartki_i_zaproszenia" title="KARTKI I ZAPROSZENIA")
          
-          div#pricing-table( class="w-1/2 justify-center flex flex-col text-white items-center mt-12 ")
-            h3(class="underline text-xl mb-3 text-[#CFB53B]") MARKETING
-            p Projekt graficzny LOGA: 200zł
-            p Projekt graficzny WIZYTÓWKI: 200zł
-            p Projekt graficzny ULOTKI: 250zł
-            p Projekt graficzny PLAKATU: 200zł
-            p Projekt graficzny BROSZURY: 250zł
-            p Projekt graficzny MENU: 250zł
-            p Projekt graficzny BILLBOARD: 300zł
-          div#pricing-table( class="w-1/2 justify-center flex flex-col text-white items-center mt-12")
-            h3(class="underline text-xl mb-3 text-[#CFB53B]") KARTKI I ZAPROSZENIA
-            p Projekt graficzny ZAPROSZENIA: 250zł
-            p  Projekt graficzny POCZTÓWKI: 200zł
-            p  Projekt graficzny KARTKI: 200zł
-          div#pricing-table(class="w-1/2 justify-center flex flex-col text-white items-center mt-12")
-            h3(class="underline text-xl mb-3 text-[#CFB53B]") ODZIEŻ:
-            p Projekt graficzny BLUZY: 250zł
-            p Projekt graficzny KOSZULKI: 250zł
-          div#pricing-table(class="w-1/2 justify-center flex flex-col text-white items-center mt-12")
-            h3(class="underline text-xl mb-3 text-[#CFB53B]") BIURO I FIRMA
-            p  Projekt graficzny CV: 150zł
-            p  Projekt graficzny CERTYFIKATU: 200zł
-            p  Projekt graficzny DYPLOMU: 200zł
-            p  Projekt graficzny FAKTURY: 200zł
-            p  Projekt graficzny KALENDARZA: 250zł
-            p  Projekt graficzny PAPIERU FIRMOWEGO: 250zł
-          div#pricing-table(class="w-1/2 justify-center flex flex-col text-white items-center mt-12")
-            h3(class="underline text-xl mb-3 text-[#CFB53B]") OPAKOWANIA/ETYKIETY
-            p  Projekt graficzny NAPOJU: 350zł
-            p  Projekt graficzny ŻYWNOŚCI: 350zł
-            p  Projekt graficzny KOSMETYKÓW: 350zł
-            p  Projekt graficzny SUPLEMENTÓW: 350zł
-          div#pricing-table( class="w-1/2 justify-center flex flex-col text-center text-white items-center mt-12")
-            h3(class="underline text-xl mb-3 text-[#CFB53B]") MEDIA SPOŁECZNOŚCIOWE
-            p  Projekt graficzny POSTU NA INSTAGRAMIE/FACEBOOKU: 200zł
-            p  Projekt graficzny RELACJI NA INSTAGRAMIE/FACEBOOKU: 200zł
-            p  Projekt graficzny ROLKI NA INSTAGRAMIE/FACEBOOKU: 200zł
-            p  Projekt graficzny WPISU NA INSTAGRAMIE/FACEBOOKU: 200zł
-            p  Projekt graficzny ZDJĘCIA W TLE NA FACEBOOKU: 200zł
-            p  Projekt graficzny REKLAMY NA INSTAGRAMIE/FACEBOOKU: 200zł
-          div#pricing-table( class="w-1/2 justify-center flex flex-col text-white items-center mt-12")
-            h3(class="underline text-xl mb-3 text-[#CFB53B]") YOUTUBE/TWITCH
-            p  Projekt graficzny OVERLAY'A: 350zł
-            p  Projekt graficzny MINIATURKI: 250zł
-            p  Projekt graficzny BANERA: 250zł
-            p  Projekt graficzny AVATARA: 250zł
-          div#pricing-table( class="w-1/2 justify-center flex flex-col text-white items-center text-center mt-12")
-            h3(class="underline text-xl mb-3 text-[#CFB53B]") PREZENTACJA
-            p  Projekt graficzny PREZENTACJI MULTIMEDIALNEJ: 30zł (jeden slajd)
-          div#pricing-table(class="w-1/2 justify-center flex flex-col text-white items-center mt-12")
-            h3(class="underline text-xl mb-3 text-[#CFB53B]") INNE
-            p  Projekt graficzny KUBKA: 250zł
-            p   Projekt graficzny PODUSZKI: 250zł
-            p  Projekt graficzny ZNICZA: 250zł
-            p  Projekt graficzny BALONA: 250zł
-            p  Projekt graficzny ETUI NA TELEFON: 250zł
-            p  Projekt graficzny TORBY: 250zł
-            p  Projekt graficzny OKŁADKI NA PŁYTĘ: 250zł
-            p  Projekt graficzny NAKLEJKI: 250zł
+          PricingTable(:elements="odziez" title="ODIEŻ")
+         
+          PricingTable(:elements="biuro_i_firma" title="BIURO I FIRMA")
+         
+          PricingTable(:elements="opakowania_i_etykiety" title="OPAKOWANIA / ETYKIETY")
+          
+          
+          PricingTable(:elements="youtube_twitch" title="YOUTUBE/TWITCH")
+         
+          PricingTable(:elements="prezentacja" title="PREZENTACJA")
+           
+         
+          PricingTable(:elements="marketing" title="MARKETING")
+
+         
+          PricingTable(:elements="media_spol" title="MEDIA SPOLECNOSCIOWE")
+          
+          PricingTable(:elements="inne" title="INNE")
+           
+           
 
 </template>
 
 <script setup lang="ts">
 const tab = ref("marketing");
+type Element = {
+  title: string;
+  price: number;
+};
+const media_spol = ref([
+  { title: "POST ", price: "200zł" },
+  { title: "RELACJA ", price: "200zł" },
+  { title: "ROLKA", price: "200zł" },
+  { title: "WPIS ", price: "200zł" },
+  { title: "ZDJECIE W TLE", price: "200zł" },
+  { title: "REKLAMA ", price: "200zł" },
+]);
+const marketing = ref([
+  { title: "LOGO", price: "200zł" },
+  { title: "WIZYTÓWKA", price: "200zł" },
+  { title: "ULOTKA", price: "250zł" },
+  { title: "PLAKATU", price: "200zł" },
+  { title: "BROSZURA", price: "250zł" },
+  { title: "MENU", price: "250zł" },
+  { title: "BILLBOARD", price: "300zł" },
+]);
+const kartki_i_zaproszenia = ref([
+  { title: "ZAPROSZENIE", price: "250zł" },
+  { title: "POCZTÓWKA", price: "200zł" },
+  { title: "KARTKA", price: "200zł" },
+]);
+const biuro_i_firma = ref([
+  { title: "CV", price: "150zł" },
+  { title: "CERTYFIKAT", price: "200zł" },
+  { title: "DYPLOM", price: "200zł" },
+  { title: "FAKTURA", price: "200zł" },
+  { title: "KALENDARZ", price: "250zł" },
+  { title: "PAPIER FIRMOWY", price: "250zł" },
+]);
+const opakowania_i_etykiety = ref([
+  { title: "OPAKOWANIE NAPOJU", price: "350zł" },
+  { title: "OPAKOWANIE ŻYWNOŚCI", price: "350zł" },
+  { title: "OPAKOWANIE KOSMETYKÓW", price: "350zł" },
+  { title: "OPAKOWANIE SUPLEMENTÓW", price: "350zł" },
+]);
+const odziez = ref([
+  { title: "KOSZULKA", price: "250zł" },
+  { title: "BLUZA", price: "250zł" },
+]);
+const youtube_twitch = ref([
+  { title: "OVERLAY", price: "350zł" },
+  { title: "MINIATURKA", price: "250zł" },
+  { title: "BANER", price: "250zł" },
+  { title: "AVATAR", price: "250zł" },
+]);
+const prezentacja = ref([
+  { title: "PREZENTACJA MULTIMEDIALNA", price: "30zł (jeden slajd)" },
+]);
+const inne = ref([
+  { title: "KUBEK", price: "250zł" },
+  { title: "PODUSZKA", price: "250zł" },
+  { title: "ZNICZ", price: "250zł" },
+  { title: "BALON", price: "250zł" },
+  { title: "ETUI NA TELEFON", price: "250zł" },
+  { title: "TORBA", price: "250zł" },
+  { title: "OKŁADKA NA PŁYTĘ", price: "250zł" },
+  { title: "NAKLEJKA", price: "250zł" },
+]);
 useHead({
   title: "Ok Graphics - Cennik, oferta",
   meta: [{ name: "description", content: "Nie bój sie, sprawdź mój cennik!" }],

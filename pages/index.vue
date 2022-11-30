@@ -27,7 +27,7 @@ div(class=" w-full  flex flex-col  bg-[#d6d6d6]")
      
  
 
-      div.button(class="hover:cursor-pointer rounded-md w-full font-adelia h-auto flex justify-center items-center text-lg text-white text-center bg-[#CFB53B] mb-8 ")
+      div.button(v-show="false" class="hover:cursor-pointer rounded-md w-full font-adelia h-auto md:h-12 flex justify-center items-center text-lg text-white text-center bg-[#CFB53B] mb-8 ")
         p Odwiedź również stronę WebGod – STRONY INTERNETOWE ORAZ APLIKACJE
   
 
