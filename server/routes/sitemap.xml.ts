@@ -4,7 +4,7 @@ import { dirname, resolve } from "path";
 import { fileURLToPath } from "url";
 import fs from "fs";
 
-const BASE_URL = "https://capable-cajeta-0399cf.netlify.app";
+const BASE_URL = "https://okgraphics.pl";
 
 export default defineEventHandler(async (event) => {
   const sitemap = new SitemapStream({ hostname: BASE_URL });
