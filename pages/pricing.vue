@@ -11,7 +11,7 @@ div(class=" w-full  flex flex-col  bg-[#d6d6d6]")
          
           PricingTable(:elements="biuro_i_firma" title="BIURO I FIRMA")
          
-          PricingTable(:elements="opakowania_i_etykiety" title="OPAKOWANIA / ETYKIETY")
+          PricingTable(:elements="opakowania_i_etykiety" title="OPAKOWANIA/ETYKIETY")
           
           
           PricingTable(:elements="youtube_twitch" title="YOUTUBE/TWITCH")
@@ -22,7 +22,7 @@ div(class=" w-full  flex flex-col  bg-[#d6d6d6]")
           PricingTable(:elements="marketing" title="MARKETING")
 
          
-          PricingTable(:elements="media_spol" title="MEDIA SPOLECNOSCIOWE")
+          PricingTable(:elements="media_spol" title="MEDIA SPOŁECZNOŚCIOWE")
           
           PricingTable(:elements="inne" title="INNE")
            
@@ -48,7 +48,7 @@ const marketing = ref([
   { title: "LOGO", price: "200zł" },
   { title: "WIZYTÓWKA", price: "200zł" },
   { title: "ULOTKA", price: "250zł" },
-  { title: "PLAKATU", price: "200zł" },
+  { title: "PLAKAT", price: "200zł" },
   { title: "BROSZURA", price: "250zł" },
   { title: "MENU", price: "250zł" },
   { title: "BILLBOARD", price: "300zł" },

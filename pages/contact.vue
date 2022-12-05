@@ -16,10 +16,10 @@ div(class=" w-full h-full flex flex-col  bg-[#d6d6d6]")
                         IconEmail(@click="sendEmail" class="text-white w-6 h-6 ")
                 
                         div#email(@click="sendEmail")
-                            h2() graphicdesigner@gmail.com
+                            h2() kontakt.graphicdesigner@gmail.com
                     div(@click='openFBPage' class="flex space-x-2 hover:cursor-pointer")
                         IconFb( class="text-blue-600 w-6 h-6 ")
-                        h2 Ok Graphics
+                        h2 OK Graphics
                 h3(class="mt-8") Dni/godziny pracy: Od poniedziałku do soboty, 10:00-20:00
 
                

@@ -12,7 +12,7 @@ div(class=" w-full  flex flex-col  bg-[#d6d6d6]")
           h2(class=" text-6xl md:text-8xl  font-bold mt-4  text-[#CFB53B] text-center") OK Graphics
           h2(class=" text-xl md:text-3xl font-adelia font-medium text-center") TWÓJ ZDALNY GRAFIK KOMPUTEROWY
           div(class="w-full flex flex-col items-center justify-center mb-16")
-            button#header-button( @click='router.push({path: "/portfolio" })' class="border-2 h-16 w-44 hover:bg-[#CFB53B] hover:border-[#CFB53B]  border-[#CFB53B] text-2xl font-adelia text-white") Galeria
+            <!-- button#header-button( @click='router.push({path: "/portfolio" })' class="border-2 h-16 w-44 hover:bg-[#CFB53B] hover:border-[#CFB53B]  border-[#CFB53B] text-2xl font-adelia text-white") Galeria -->
             div(class="w-full flex flex-col justify-center mt-8")
               h3(class="text-xl font-adelia font-semibold text-center  ") Zaprojektuję dla Ciebie wyjątkowe i niepowtarzalne prace graficzne. 
               h3(class="text-xl font-adelia font-semibold text-center ") Dzięki temu Twoja firma stanie się rozpoznawalna!
@@ -41,12 +41,12 @@ div(class=" w-full  flex flex-col  bg-[#d6d6d6]")
 <style lang="sass">
 
 #header
-  background-image: url(~/assets/images/header.webp)
+  background-image: url(/images/header-new.webp)
   background-size: cover
 
   background-position: bottom
   background-repeat: no-repeat
-  background-size: fill
+
 
 #header-button
   -webkit-transition-property: color, background-color

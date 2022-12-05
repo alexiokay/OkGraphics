@@ -28,14 +28,14 @@ export default defineNuxtConfig({
         lang: "pl",
       },
       viewport: "width=device-width, initial-scale=1",
-      title: "Ok Graphics - twój grafik komputerowy",
+      title: "OK Graphics - twój grafik komputerowy",
       meta: [
         // <meta name="description" content="My amazing site">
         {
           hid: `description`,
           name: "description",
           content:
-            "Ok Graphics, twój grafik komputerowy, loga, wizytówki, ulotki, plakaty, banery",
+            "OK Graphics, twój grafik komputerowy, loga, wizytówki, ulotki, plakaty, banery",
         },
       ],
       link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],

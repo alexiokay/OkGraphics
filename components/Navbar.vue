@@ -3,7 +3,7 @@ div#mobile-menu(v-if="mobileMenu === true" class="fixed top-0 left-0 md:hidden f
   div(class="flex w-[80%] h-[7rem] justify-end items-center ")
     button(@click="mobileMenu = false" class="text-white text-4xl") X
   div#mobile-menu-content(class="flex w-full h-full text-2xl text-white flex-col justify-start items-center")
-    NuxtLink(@click="mobileMenu = false" class="navbar-text    hover:text-blue-700 mt-12" to="/") STRONA GLOWNA
+    NuxtLink(@click="mobileMenu = false" class="navbar-text    hover:text-blue-700 mt-12" to="/") STRONA GŁÓWNA
     NuxtLink(@click="mobileMenu = false" class="navbar-text  hover:text-blue-700 mt-8 " to="/about") O MNIE
     NuxtLink(@click="mobileMenu = false" class="navbar-text  hover:text-blue-700 mt-8 " to="/portfolio") PORTFOLIO
     NuxtLink(@click="mobileMenu = false" class="navbar-text  hover:text-blue-700 mt-8 " to="/pricing") CENNIK
@@ -18,7 +18,7 @@ div#navbar-wrapper(class=" w-full h-[7rem] flex items-center justify-between lg:
     div#navbar-empty(class=" w-[0px] lg:w-[12%] h-full flex items-center justify-center mx-0")
     div#navbar-content(class="  lg:w-[76%] w-[66%] h-full flex items-center justify-end md:justify-around mx-0 tracking-wider text-white font-brown  font-normal ")
     
-      NuxtLink(class="navbar-text  hidden md:block  hover:text-blue-700 " to="/") STRONA GLOWNA
+      NuxtLink(class="navbar-text  hidden md:block  hover:text-blue-700 " to="/") STRONA GŁÓWNA
       NuxtLink(class="navbar-text  hidden md:block  hover:text-blue-700 " to="about") O MNIE
       NuxtLink(class="navbar-text  hidden md:block  hover:text-blue-700 " to="portfolio") PORTFOLIO
       NuxtLink(class="navbar-text  hidden md:block  hover:text-blue-700 " to="pricing") CENNIK
