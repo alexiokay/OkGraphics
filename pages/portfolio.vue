@@ -1,16 +1,16 @@
 <template lang="pug">
-div(class=" w-full  flex flex-col  bg-[#CFB53B]")
+div(class=" w-full  flex flex-col  bg-[#4cc9f0]")
 
   div(class="flex flex-row h-full justify-center mt-16 md:mt-20 mb-12  ")
     div(class="flex h-full items-start p-10 flex-col w-full sm:w-[96%] xl:w-[87%] justify-center rounded-md bg-[#000000]")
-      h1(class="text-white text-3xl text-center w-full") MOJE PRACE
+      h1(class="text-white text-3xl text-center w-full") Moje prace
     
       
      
 
       ClientOnly
         h2(class="w-[95%] text-white text-2xl mt-16  ")
-          p(class="mb-2") Wizytowki
+          p(class="mb-2") Wizytówki
           LazySwiper(:slides="wizytowki")
 
         h2(class="w-[95%] text-white text-2xl mb-2 ")
