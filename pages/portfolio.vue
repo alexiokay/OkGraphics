@@ -10,7 +10,7 @@ div(class=" w-full  flex flex-col  bg-[#CFB53B]")
 
       ClientOnly
         h2(class="w-[95%] text-white text-2xl mt-16  ")
-          p(class="mb-2") Wizytowki
+          p(class="mb-2") Wizytówki
           LazySwiper(:slides="wizytowki")
 
         h2(class="w-[95%] text-white text-2xl mb-2 ")
