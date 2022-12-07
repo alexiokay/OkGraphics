@@ -20,6 +20,16 @@ div(class=" w-full  flex flex-col  bg-[#F78770]")
               h3(class="text-xl font-adelia font-semibold text-center  ") Zaprojektuję dla Ciebie wyjątkowe i niepowtarzalne prace graficzne. 
               h3(class="text-xl font-adelia font-semibold text-center ") Dzięki temu Twoja firma stanie się rozpoznawalna!
       div#offert-elements(class="flex flex-row w-full h-42 mt-16 items-start justify-around ")
+      
+      background: hsla(211, 100%, 52%, 1);
+
+background: linear-gradient(90deg, hsla(211, 100%, 52%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(211, 100%, 52%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(211, 100%, 52%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0980FF", endColorstr="#000000", GradientType=1 );
         
 
       
