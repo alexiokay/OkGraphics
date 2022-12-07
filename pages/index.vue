@@ -1,5 +1,5 @@
 <template lang="pug">
-div(class=" w-full  flex flex-col  bg-[#edede9]")
+div(class=" w-full  flex flex-col  bg-[#00898a]")
   h1(v-show="false") Ok Graphics, twój zdalny doświadczony grafik komputerowy.
 
 
@@ -15,7 +15,7 @@ div(class=" w-full  flex flex-col  bg-[#edede9]")
           
           h2(class=" text-xl md:text-3xl font-adelia font-medium text-center") TWÓJ ZDALNY GRAFIK KOMPUTEROWY
           div(class="w-full flex flex-col items-center justify-center mb-16")
-            <!-- button#header-button( @click='router.push({path: "/portfolio" })' class="border-2 h-16 w-44 hover:bg-[#CFB53B] hover:border-[#CFB53B]  border-[#4cc9f0] text-2xl font-adelia text-white") Galeria -->
+            <!-- button#header-button( @click='router.push({path: "/portfolio" })' class="border-2 h-16 w-44 hover:bg-[#CFB53B] hover:border-[#CFB53B]  border-[#00898a] text-2xl font-adelia text-white") Galeria -->
             div(class="w-full flex flex-col justify-center mt-8")
               h3(class="text-xl font-adelia font-semibold text-center  ") Zaprojektuję dla Ciebie wyjątkowe i niepowtarzalne prace graficzne. 
               h3(class="text-xl font-adelia font-semibold text-center ") Dzięki temu Twoja firma stanie się rozpoznawalna!
