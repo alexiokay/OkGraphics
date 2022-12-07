@@ -19,9 +19,9 @@ div#navbar-wrapper(class=" w-full h-[7rem] flex items-center justify-between lg:
     div#navbar-content(class="  lg:w-[76%] w-[66%] h-full flex items-center justify-end md:justify-around mx-0 tracking-wider text-white font-brown  font-normal ")
     
       NuxtLink(class="navbar-text  hidden md:block  hover:text-blue-700 " to="/") STRONA GŁÓWNA
-      NuxtLink(class="navbar-text  hidden md:block  hover:text-blue-700 " to="about") O MNIE
-      NuxtLink(class="navbar-text  hidden md:block  hover:text-blue-700 " to="portfolio") PORTFOLIO
-      NuxtLink(class="navbar-text  hidden md:block  hover:text-blue-700 " to="pricing") CENNIK
+      NuxtLink(class="navbar-text  hidden md:block  hover:text-blue-700 " to="/about") O MNIE
+      NuxtLink(class="navbar-text  hidden md:block  hover:text-blue-700 " to="/portfolio") PORTFOLIO
+      NuxtLink(class="navbar-text  hidden md:block  hover:text-blue-700 " to="/pricing") CENNIK
       NuxtLink(class="navbar-text  hidden md:block hover:text-blue-700 " to="/contact" ) KONTAKT
       button#mobile-menu-button(@click="mobileMenu = !MobileMenu" class="block md:hidden") Menu
 
