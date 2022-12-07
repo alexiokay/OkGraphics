@@ -114,19 +114,19 @@ onMounted(() => {
   @media (min-width: 0px) and (max-width: 419px)
   .swiper-container
     width: 100%
-    height: 8rem
+    height: 100px
     margin: 20px auto
 
 @media (min-width: 420px) and (max-width: 754px)
   .swiper-container
     width: 100%
-    height: 11rem
+    height: 180px
     margin: 20px auto
 
 @media (min-width: 754px)
   .swiper-container
     width: 100%
-    height: 13rem
+    height: 210px
     margin: 20px auto
 
 

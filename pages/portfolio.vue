@@ -9,12 +9,15 @@ div(class=" w-full  flex flex-col  bg-[#CFB53B]")
      
 
       ClientOnly
-        h2(class="w-[95%] text-white text-3xl mt-16 ") Wizytowki
+        h2(class="w-[95%] text-white text-2xl mt-16  ")
+          p(class="mb-2") Wizytowki
           LazySwiper(:slides="wizytowki")
 
-        h2(class="w-[95%] text-white text-3xl ") Loga
+        h2(class="w-[95%] text-white text-2xl mb-2 ")
+          p(class="mb-2") Loga
           LazySwiper(:slides="loga") 
-        h2(class="w-[95%] text-white text-3xl ") Miniaturki
+        h2(class="w-[95%] text-white text-2xl ") 
+          p(class="mb-2") Miniaturki
           LazySwiper(:slides="miniaturki") 
           
 
