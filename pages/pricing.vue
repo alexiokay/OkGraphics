@@ -1,8 +1,8 @@
 <template lang="pug">
-div(class=" w-full  flex flex-col  bg-[#d6d6d6]")
+div(class=" w-full  flex flex-col  bg-[#CFB53B]")
     div(class="flex flex-row h-full justify-center mt-16 md:mt-20 mb-12  ")
       
-        div(class="flex flex-col md:flex-row space-x-3 flex-wrap h-full items-center md:items-start p-4 md:p-10  w-full sm:w-[96%] xl:w-[87%] justify-around rounded-md bg-[#202020]")
+        div(class="flex flex-col md:flex-row space-x-3 flex-wrap h-full items-center md:items-start p-4 md:p-10  w-full sm:w-[96%] xl:w-[87%] justify-around rounded-md bg-[#000000]")
           h1(class='w-full  text-4xl text-center text-white m-auto mb-6') CENNIK
           
           PricingTable(:elements="kartki_i_zaproszenia" title="KARTKI I ZAPROSZENIA")

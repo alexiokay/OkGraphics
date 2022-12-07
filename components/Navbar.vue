@@ -8,7 +8,7 @@ div#mobile-menu(v-if="mobileMenu === true" class="fixed top-0 left-0 md:hidden f
     NuxtLink(@click="mobileMenu = false" class="navbar-text  hover:text-blue-700 mt-8 " to="/portfolio") PORTFOLIO
     NuxtLink(@click="mobileMenu = false" class="navbar-text  hover:text-blue-700 mt-8 " to="/pricing") CENNIK
     NuxtLink(@click="mobileMenu = false" class="navbar-text  hover:text-blue-700 mt-8 " to="/contact" ) KONTAKT
-div#navbar-wrapper(class=" w-full h-[7rem] flex items-center justify-between lg:justify-center mx-0 bg-[#202020]") 
+div#navbar-wrapper(class=" w-full h-[7rem] flex items-center justify-between lg:justify-center mx-0 bg-[#000000]") 
 
   div#navbar-content(class=" w-full lg:w-[87%] h-full flex items-center justify-center self-start mx-0")
     

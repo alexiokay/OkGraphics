@@ -1,21 +1,22 @@
 <template lang="pug">
-div(class=" w-full  flex flex-col  bg-[#d6d6d6]")
+div(class=" w-full  flex flex-col  bg-[#CFB53B]")
 
   div(class="flex flex-row h-full justify-center mt-16 md:mt-20 mb-12  ")
-    div(class="flex h-full items-start p-10 flex-col w-full sm:w-[96%] xl:w-[87%] justify-center rounded-md bg-[#202020]")
+    div(class="flex h-full items-start p-10 flex-col w-full sm:w-[96%] xl:w-[87%] justify-center rounded-md bg-[#000000]")
       h1(class="text-white text-3xl text-center w-full") MOJE PRACE
     
       
      
 
- 
-      h2(class="w-[95%] text-white text-3xl mt-16 ") Wizytowki
       ClientOnly
-        LazySwiper(:slides="wizytowki")
-      h2(class="w-[95%] text-white text-3xl ") Ulotki
-      ClientOnly
-        LazySwiper(:slides="ulotki") 
-        
+        h2(class="w-[95%] text-white text-3xl mt-16 ") Wizytowki
+          LazySwiper(:slides="wizytowki")
+
+        h2(class="w-[95%] text-white text-3xl ") Loga
+          LazySwiper(:slides="loga") 
+        h2(class="w-[95%] text-white text-3xl ") Miniaturki
+          LazySwiper(:slides="miniaturki") 
+          
 
 
 
@@ -23,7 +24,7 @@ div(class=" w-full  flex flex-col  bg-[#d6d6d6]")
 </template>
 
 <script setup lang="ts">
-import { wizytowki, ulotki } from "../libs/sliders";
+import { wizytowki, ulotki, loga, miniaturki } from "../libs/sliders";
 const router = useRouter();
 
 const toMakeOrder = () => {

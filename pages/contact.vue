@@ -1,22 +1,22 @@
 <template lang="pug">
-div(class=" w-full h-full flex flex-col  bg-[#d6d6d6]")
+div(class=" w-full h-full flex flex-col  bg-[#CFB53B]")
     div(class="flex flex-row h-full justify-center mt-16 md:mt-20 mb-12  ")
-        div(class="flex h-full items-start p-10 flex-col md:flex-row w-full sm:w-[96%] xl:w-[87%] justify-center rounded-md bg-[#202020]")
+        div(class="flex h-full items-start p-10 flex-col md:flex-row w-full sm:w-[96%] xl:w-[87%] justify-center rounded-md bg-[#000000]")
             
             <div class="map  w-full md:w-3/5 h-[50vh] md:h-[69vh]" id="map" ></div>
             div(class=" w-full md:w-2/5 h-[69vh] text-white flex flex-col justify-start items-start px-10")
               
-                div(class="flex flex-col items-start justify-center ml-4 text-white space-y-2")
+                div(class="flex flex-col items-start justify-center ml-4 text-white space-y-2 ")
                     h1(class="text-4xl mb-10 mt-4 md:mt-0") KONTAKT
                     div(class="flex hover:cursor-pointer space-x-2")
                         IconPhone(@click="callNumber" class="text-blue-700 w-6 h-6")
                         h2 798 832 807
                     
-                    div( class="flex space-x-2 hover:cursor-pointer")
+                    div( class="flex space-x-2 hover:cursor-pointer break-normal  ")
                         IconEmail(@click="sendEmail" class="text-white w-6 h-6 ")
                 
-                        div#email(@click="sendEmail")
-                            h2() kontakt.graphicdesigner@gmail.com
+                        div#email(@click="sendEmail" class="break-all")
+                            h2(class="") kontakt.graphicdesigner@gmail.com
                     div(@click='openFBPage' class="flex space-x-2 hover:cursor-pointer")
                         IconFb( class="text-blue-600 w-6 h-6 ")
                         h2 OK Graphics
