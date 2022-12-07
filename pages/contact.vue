@@ -7,7 +7,7 @@ div(class=" w-full h-full flex flex-col  bg-[#CFB53B]")
             div(class=" w-full md:w-2/5 h-[69vh] text-white flex flex-col justify-start items-start px-10")
               
                 div(class="flex flex-col items-start justify-center ml-4 text-white space-y-2 ")
-                    h1(class="text-4xl mb-10 mt-4 md:mt-0") KONTAKT
+                    h1(class="text-4xl mb-10 mt-4 md:mt-0") Kontakt
                     div(class="flex hover:cursor-pointer space-x-2")
                         IconPhone(@click="callNumber" class="text-blue-700 w-6 h-6")
                         h2 798 832 807
