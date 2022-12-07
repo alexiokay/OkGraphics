@@ -1,5 +1,5 @@
 <template lang="pug">
-div(class=" w-full  flex flex-col  bg-[#7209b7]")
+div(class=" w-full  flex flex-col  bg-[#4cc9f0]")
 
   div(class="flex flex-row h-full justify-center mt-16 md:mt-20 mb-12  ")
     div(class="flex h-full items-start p-10 flex-col w-full sm:w-[96%] xl:w-[87%] justify-center rounded-md bg-[#000000]")
