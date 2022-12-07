@@ -1,5 +1,5 @@
 <template lang="pug">
-div(class=" w-full  flex flex-col  bg-[#CFB53B]")
+div(class=" w-full  flex flex-col  bg-[#7209b7]")
   h1(v-show="false") Ok Graphics, twój zdalny doświadczony grafik komputerowy.
 
 
