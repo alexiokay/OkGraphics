@@ -92,7 +92,8 @@ const inne = ref([
   { title: "BALON", price: "250zł" },
   { title: "ETUI NA TELEFON", price: "250zł" },
   { title: "TORBA", price: "250zł" },
-  { title: "OKŁADKA NA PŁYTĘ", price: "250zł" },
+  { title: "OKŁADKA PŁYTY", price: "250zł" },
+  { title: "OKŁADKA KSIĄŻKI", price: "250zł" },
   { title: "NAKLEJKA", price: "250zł" },
 ]);
 useHead({
