@@ -1,5 +1,5 @@
 <template lang="pug">
-div(class=" w-full  flex flex-col  bg-[#F78770]")
+div(class=" w-full  flex flex-col  bg-[#c9ada7]")
   h1(v-show="false") Ok Graphics, twój zdalny doświadczony grafik komputerowy.
 
 
@@ -10,12 +10,12 @@ div(class=" w-full  flex flex-col  bg-[#F78770]")
    
     div(class="flex h-full flex-col w-[95%]  mt-8 rounded-md ") 
     
-      div#header(class=" h-[35rem] sm:h-[33rem] w-full bg-[#d6d6d6] shadow-xl flex flex-col items-center justify-center")
+      div#header(class=" h-[35rem] sm:h-[33rem] w-full bg-[#c9ada7] shadow-xl flex flex-col items-center justify-center")
         div#header-content(class=" w-full h-[90%] md:h-[100%] flex flex-col items-center justify-around text-white")
           
           h2(class=" text-xl md:text-3xl font-adelia font-medium text-center") TWÓJ ZDALNY GRAFIK KOMPUTEROWY
           div(class="w-full flex flex-col items-center justify-center mb-16")
-            <!-- button#header-button( @click='router.push({path: "/portfolio" })' class="border-2 h-16 w-44 hover:bg-[#CFB53B] hover:border-[#F78770]  border-[#F78770) Galeria -->
+            <!-- button#header-button( @click='router.push({path: "/portfolio" })' class="border-2 h-16 w-44 hover:bg-[#c9ada7] hover:border-[#c9ada7]  border-[#c9ada7) Galeria -->
             div(class="w-full flex flex-col justify-center mt-8")
               h3(class="text-xl font-adelia font-semibold text-center  ") Zaprojektuję dla Ciebie wyjątkowe i niepowtarzalne prace graficzne. 
               h3(class="text-xl font-adelia font-semibold text-center ") Dzięki temu Twoja firma stanie się rozpoznawalna!
