@@ -14,6 +14,7 @@ div(class=" w-full  flex flex-col  bg-[#CFB53B]")
         h2(class="w-[95%] text-white text-2xl mb-2 ")
           p(class="mb-2") Loga
           LazySwiper(:slides="loga") 
+        
         h2(class="w-[95%] text-white text-2xl ") 
           p(class="mb-2") Ulotki
           LazySwiper(:slides="ulotki") 
@@ -21,6 +22,11 @@ div(class=" w-full  flex flex-col  bg-[#CFB53B]")
           h2(class="w-[95%] text-white text-2xl mt-16  ")
           p(class="mb-2") Wizytówki
           LazySwiper(:slides="wizytowki")
+          
+          
+          h2(class="w-[95%] text-white text-2xl mt-16  ")
+          p(class="mb-2") Plakat
+          LazySwiper(:slides="plakat")
           
 
 
