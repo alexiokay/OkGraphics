@@ -41,7 +41,7 @@ const media_spol = ref([
   { title: "RELACJA ", price: "200zł" },
   { title: "ROLKA", price: "200zł" },
   { title: "WPIS ", price: "200zł" },
-  { title: "ZDJECIE W TLE", price: "200zł" },
+  { title: "ZDJĘCIE W TLE", price: "200zł" },
   { title: "REKLAMA ", price: "200zł" },
 ]);
 const marketing = ref([
@@ -67,10 +67,10 @@ const biuro_i_firma = ref([
   { title: "PAPIER FIRMOWY", price: "250zł" },
 ]);
 const opakowania_i_etykiety = ref([
-  { title: "OPAKOWANIE NAPOJU", price: "350zł" },
-  { title: "OPAKOWANIE ŻYWNOŚCI", price: "350zł" },
-  { title: "OPAKOWANIE KOSMETYKÓW", price: "350zł" },
-  { title: "OPAKOWANIE SUPLEMENTÓW", price: "350zł" },
+  { title: "NAPOJU", price: "350zł" },
+  { title: "ŻYWNOŚCI", price: "350zł" },
+  { title: "KOSMETYKÓW", price: "350zł" },
+  { title: "SUPLEMENTÓW", price: "350zł" },
 ]);
 const odziez = ref([
   { title: "KOSZULKA", price: "250zł" },
@@ -92,7 +92,8 @@ const inne = ref([
   { title: "BALON", price: "250zł" },
   { title: "ETUI NA TELEFON", price: "250zł" },
   { title: "TORBA", price: "250zł" },
-  { title: "OKŁADKA NA PŁYTĘ", price: "250zł" },
+  { title: "OKŁADKA PŁYTY", price: "250zł" },
+  { title: "OKŁADKA KSIĄŻKI", price: "250zł" },
   { title: "NAKLEJKA", price: "250zł" },
 ]);
 useHead({

@@ -1,26 +1,32 @@
 <template lang="pug">
-div(class=" w-full  flex flex-col  bg-[#00898a]")
+div(class=" w-full  flex flex-col  bg-[#CFB53B]")
   h1(v-show="false") Ok Graphics, twój zdalny doświadczony grafik komputerowy.
 
 
 
   div(class="flex flex-col h-full items-center justify-center mt-16 md:mt-2 mb-10  ")
    h1(class=" text-6xl md:text-8xl  font-bold mt-4  text-white text-center") OK Graphics
-   div(class="flex h-full flex-row w-full sm:w-[96%] xl:w-[87%] mt-8 justify-center rounded-md bg-[#00898a]")
+   div(class="flex h-full flex-row w-full sm:w-[96%] xl:w-[87%] mt-8 justify-center rounded-md bg-[#000000]")
    
     div(class="flex h-full flex-col w-[95%]  mt-8 rounded-md ") 
     
-      div#header(class=" h-[35rem] sm:h-[33rem] w-full bg-[#d6d6d6] shadow-xl flex flex-col items-center justify-center")
+      div#header(class=" h-[35rem] sm:h-[33rem] w-full bg-[#c9ada7] shadow-xl flex flex-col items-center justify-center")
         div#header-content(class=" w-full h-[90%] md:h-[100%] flex flex-col items-center justify-around text-white")
           
           h2(class=" text-xl md:text-3xl font-adelia font-medium text-center") TWÓJ ZDALNY GRAFIK KOMPUTEROWY
           div(class="w-full flex flex-col items-center justify-center mb-16")
-            <!-- button#header-button( @click='router.push({path: "/portfolio" })' class="border-2 h-16 w-44 hover:bg-[#CFB53B] hover:border-[#00898a]  border-[#00898a] text-2xl font-adelia text-white") Galeria -->
+            <!-- button#header-button( @click='router.push({path: "/portfolio" })' class="border-2 h-16 w-44 hover:bg-[#c9ada7] hover:border-[#c9ada7]  border-[#c9ada7) Galeria -->
             div(class="w-full flex flex-col justify-center mt-8")
               h3(class="text-xl font-adelia font-semibold text-center  ") Zaprojektuję dla Ciebie wyjątkowe i niepowtarzalne prace graficzne. 
               h3(class="text-xl font-adelia font-semibold text-center ") Dzięki temu Twoja firma stanie się rozpoznawalna!
       div#offert-elements(class="flex flex-row w-full h-42 mt-16 items-start justify-around ")
+<<<<<<< HEAD
    
+=======
+      
+
+
+>>>>>>> 682425a9c11e077db0b9048659b14991f67cce25
 
       
           

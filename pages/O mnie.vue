@@ -6,7 +6,7 @@ div(class=" w-full h-screen  flex flex-col  bg-[#CFB53B]")
                     div(class="flex w-4/5 md:w-2/4  justify-center items-center")
                         img(src="/images/Avatar2.webp" class=" w-5/6 h-full sm:w-2/4 md:w-3/4 md:h-5/6 lg:w-2/4 lg:h-full" width="" height="" alt="avatar")
                     div(class="flex flex-col justify-start w-full md:w-2/4 space-y-4 mt-4 ")
-                        h1(class=" text-4xl text-center text-[#CFB53B] md:text-start") O mnie
+                        h1(class=" text-4xl text-center text-[#FFFFFF] md:text-start") O MNIE
                         p(class="text-white text-center md:text-start") Nazywam się Oktawia Kaczmarska, jestem grafikiem komputerowym. Doświadczenie zdobyłam poprzez samokształcenie się zdalnie i nadal kreuje swoje umiejętności, poszerzając przy tym swoje portfolio. Zrealizowałam już kilka projektów graficznych, odnosząc przy tym sukces zawodowy z zadowolonych klientów.
                         p(class="text-white text-center md:text-start") Pracuje w domowym zaciszu, by móc maksymalnie się skupić na opracowaniu zlecenia powierzonego przez klienta.
                        
