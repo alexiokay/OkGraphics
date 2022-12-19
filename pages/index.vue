@@ -20,13 +20,9 @@ div(class=" w-full  flex flex-col  bg-[#CFB53B]")
               h3(class="text-xl font-adelia font-semibold text-center  ") Zaprojektuję dla Ciebie wyjątkowe i niepowtarzalne prace graficzne. 
               h3(class="text-xl font-adelia font-semibold text-center ") Dzięki temu Twoja firma stanie się rozpoznawalna!
       div#offert-elements(class="flex flex-row w-full h-42 mt-16 items-start justify-around ")
-<<<<<<< HEAD
-   
-=======
       
 
 
->>>>>>> 682425a9c11e077db0b9048659b14991f67cce25
 
       
           
