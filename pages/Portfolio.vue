@@ -16,7 +16,6 @@ div(class=" w-full  flex flex-col  bg-[#CFB53B]")
           LazySwiper(:slides="loga") 
         
         h2(class="w-[95%] text-white text-2xl ") 
-<<<<<<< HEAD:pages/portfolio.vue
           p(class="mb-2") Miniaturki
           LazySwiper(:slides="miniaturki") 
         h2(class="w-[95%] text-white text-2xl ") 
@@ -25,28 +24,15 @@ div(class=" w-full  flex flex-col  bg-[#CFB53B]")
         h2(class="w-[95%] text-white text-2xl ") 
           p(class="mb-2") Książki
           LazySwiper(:slides="ksiazki") 
-=======
-          p(class="mb-2") Ulotki
-          LazySwiper(:slides="ulotki") 
-          
-          h2(class="w-[95%] text-white text-2xl mt-16  ")
-          p(class="mb-2") Wizytówki
-          LazySwiper(:slides="wizytowki")
-          
-          
-          h2(class="w-[95%] text-white text-2xl mt-16  ")
-          p(class="mb-2") Plakat
-          LazySwiper(:slides="plakat")
-          
-
->>>>>>> 682425a9c11e077db0b9048659b14991f67cce25:pages/Portfolio.vue
+        h2(class="w-[95%] text-white text-2xl ") 
+          p(class="mb-2") Naklejki
+          LazySwiper(:slides="naklejki") 
 
 
 
 </template>
 
 <script setup lang="ts">
-<<<<<<< HEAD:pages/portfolio.vue
 import {
   wizytowki,
   ulotki,
@@ -54,10 +40,8 @@ import {
   miniaturki,
   plakaty,
   ksiazki,
+  naklejki,
 } from "../libs/sliders";
-=======
-import { loga, wizytówki, ulotki, plakat, naklejki, okładka książki } from "../libs/sliders";
->>>>>>> 682425a9c11e077db0b9048659b14991f67cce25:pages/Portfolio.vue
 const router = useRouter();
 
 const toMakeOrder = () => {
