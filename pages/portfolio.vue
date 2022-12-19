@@ -19,15 +19,26 @@ div(class=" w-full  flex flex-col  bg-[#4cc9f0]")
         h2(class="w-[95%] text-white text-2xl ") 
           p(class="mb-2") Miniaturki
           LazySwiper(:slides="miniaturki") 
-          
-
+        h2(class="w-[95%] text-white text-2xl ") 
+          p(class="mb-2") Plakaty
+          LazySwiper(:slides="plakaty") 
+        h2(class="w-[95%] text-white text-2xl ") 
+          p(class="mb-2") Książki
+          LazySwiper(:slides="ksiazki") 
 
 
 
 </template>
 
 <script setup lang="ts">
-import { wizytowki, ulotki, loga, miniaturki } from "../libs/sliders";
+import {
+  wizytowki,
+  ulotki,
+  loga,
+  miniaturki,
+  plakaty,
+  ksiazki,
+} from "../libs/sliders";
 const router = useRouter();
 
 const toMakeOrder = () => {

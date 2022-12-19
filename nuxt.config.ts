@@ -3,7 +3,7 @@ import Icons from "unplugin-icons/vite";
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  modules: ["@nuxtjs/tailwindcss", "@nuxt/content"],
+  modules: ["@nuxtjs/tailwindcss", "@nuxt/content", "@nuxt/image-edge"],
 
   build: {
     transpile: ["swiper", "@googlemaps/js-api-loader"],
@@ -20,6 +20,8 @@ export default defineNuxtConfig({
     },
   },
   ssr: true, // <
+
+  image: {},
 
   app: {
     head: {
