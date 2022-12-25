@@ -46,8 +46,8 @@ div(id="index-page" class=" w-full  flex flex-col")
 <style lang="sass">
 
 #index-page
-  background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7)
-  background: linear-gradient(to right, #2c3e50, #bdc3c7)
+  background: linear gradient to top right, #0066ff 0%, #ffffff 100%;
+
 
 
 #header
