@@ -2,7 +2,7 @@
 .swiper-container(class='overflow-hidden')
     .swiper-wrapper
         .swiper-slide(v-for="slide in props.slides" class="rounded-xl select-none")
-            img.swiper-image(:src="slide.img" class="swiper-lazy rounded-xl" width="560" height="420" format="webp" alt="logo")
+            img.swiper-image(:src="slide.img" class="swiper-lazy rounded-xl"  alt="logo")
             .swiper-lazy-preloader
             
 </template>
@@ -167,7 +167,7 @@ onMounted(() => {
   padding: 15px
 
 .swiper-image
-  object: cover
+  object-fit: cover
   width: 100%
   height: 100%
 </style>
