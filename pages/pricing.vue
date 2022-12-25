@@ -1,5 +1,5 @@
 <template lang="pug">
-div(class=" w-full  flex flex-col  bg-[#CFB53B]")
+div(id="pricing-page" class=" w-full  flex flex-col  bg-[#CFB53B]")
     div(class="flex flex-row h-full justify-center mt-16 md:mt-20 mb-12  ")
       
         div(class="flex flex-col md:flex-row space-x-3 flex-wrap h-full items-center md:items-start p-4 md:p-10  w-full sm:w-[96%] xl:w-[87%] justify-around rounded-md bg-[#000000]")
@@ -102,4 +102,7 @@ useHead({
 });
 </script>
 
-<style lang="sass"></style>
+<style lang="sass">
+#pricing-page
+  background-image: linear-gradient(to top, #cfb53b, #b27937, #804933, #432525, #000000)
+</style>

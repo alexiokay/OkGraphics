@@ -1,5 +1,5 @@
 <template lang="pug">
-div(class=" w-full  flex flex-col  bg-[#CFB53B]")
+div(id="portfolio-page" class=" w-full  flex flex-col  bg-[#CFB53B]")
 
   div(class="flex flex-row h-full justify-center mt-16 md:mt-20 mb-12  ")
     div(class="flex h-full items-start p-10 flex-col w-full sm:w-[96%] xl:w-[87%] justify-center rounded-md bg-[#000000]")
@@ -65,4 +65,7 @@ useHead({
 });
 </script>
 
-<style lang="sass"></style>
+<style lang="sass">
+#portfolio-page
+  background-image: linear-gradient(to top, #cfb53b, #b27937, #804933, #432525, #000000)
+</style>
