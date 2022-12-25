@@ -46,7 +46,7 @@ div(id="index-page" class=" w-full  flex flex-col")
 <style lang="sass">
 
 #index-page
- background-image: linear-gardient(to top, #ff99cc, #ff99cc)
+ background-image: linear-gardient(to top, #cfb53b, #b27937, #804933, #432525, #000000)
 #header
   background-image: url(/images/header-new.webp)
   background-size: cover
