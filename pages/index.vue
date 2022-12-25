@@ -1,6 +1,5 @@
 <template lang="pug">
-div(class=" w-full  flex flex-col  background-color: rgba(89, 131, 252, 1);
-background-image: linear-gradient(90deg, rgba(89, 131, 252, 1) 0%, rgba(41, 53, 86, 1) 100%);")
+div(id="index-page" class=" w-full  flex flex-col to-blue-500")
   h1(v-show="false") Ok Graphics, twój zdalny doświadczony grafik komputerowy.
 
 
@@ -46,6 +45,8 @@ background-image: linear-gradient(90deg, rgba(89, 131, 252, 1) 0%, rgba(41, 53, 
 
 <style lang="sass">
 
+#index-page
+  background-image: linear-gradient(to top, #cfb53b, #b27937, #804933, #432525, #000000)
 #header
   background-image: url(/images/header-new.webp)
   background-size: cover
