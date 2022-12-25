@@ -1,5 +1,5 @@
 <template lang="pug">
-div(class=" w-full  flex flex-col  bg-[##051937, ##A8EB12);]")
+div(class=" w-full  flex flex-col  bg-[background-image: linear-gradient(to top, #051937, #004d7a, #008793, #00bf72, #a8eb12););]")
   h1(v-show="false") Ok Graphics, twój zdalny doświadczony grafik komputerowy.
 
 
