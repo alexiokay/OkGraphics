@@ -1,0 +1,1 @@
+*{scroll-snap-type:y mandatory}body{overflow-x:hidden}.app-container{display:flex;flex-direction:column;justify-content:center;z-index:10}.panel{margin:0 auto;scroll-snap-align:center;text-align:center;width:90%}.panel p.title{align-self:center;font-size:5vh;font-style:normal;letter-spacing:.18em;line-height:0%}
