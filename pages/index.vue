@@ -1,6 +1,7 @@
 <template lang="pug">
 div(id="index-page" class=" w-full  flex flex-col")
   h1(v-show="false") Ok Graphics, twój zdalny doświadczony grafik komputerowy.
+  nuxt-img(src="/images/4.webp"  width="300" height="300" )
 
 
 
@@ -20,7 +21,7 @@ div(id="index-page" class=" w-full  flex flex-col")
               h3(class="text-xl font-adelia font-semibold text-center  ") Zaprojektuję dla Ciebie wyjątkowe i niepowtarzalne prace graficzne. 
               h3(class="text-xl font-adelia font-semibold text-center ") Dzięki temu Twoja firma stanie się rozpoznawalna!
       div#offert-elements(class="flex flex-row w-full h-42 mt-16 items-start justify-around ")
-      
+
 
 
 
@@ -34,7 +35,7 @@ div(id="index-page" class=" w-full  flex flex-col")
 
       div.button(v-show="false" class="hover:cursor-pointer rounded-md w-full font-adelia h-auto md:h-12 flex justify-center items-center text-lg text-white text-center bg-[#CFB53B] mb-8 ")
         p Odwiedź również stronę WebGod – STRONY INTERNETOWE ORAZ APLIKACJE
-  
+    
 
 
       

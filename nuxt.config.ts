@@ -9,6 +9,10 @@ export default defineNuxtConfig({
     transpile: ["swiper", "@googlemaps/js-api-loader"],
   },
 
+  image: {
+    provider: "ipx",
+  },
+
   content: {
     // https://content.nuxtjs.org/api/configuration
   },
@@ -20,8 +24,6 @@ export default defineNuxtConfig({
     },
   },
   ssr: true, // <
-
-  image: {},
 
   app: {
     head: {
