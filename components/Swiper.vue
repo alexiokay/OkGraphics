@@ -2,8 +2,8 @@
 .swiper-container(class='overflow-hidden')
     .swiper-wrapper
         .swiper-slide(v-for="slide in props.slides" class="rounded-xl select-none")
-            nuxt-img.swiper-image(:src="slide.img"  class="swiper-lazy rounded-xl"  alt="logo" width="540" height="480" format="webp" )
-            .swiper-lazy-preloader 
+            img.swiper-image(:src="slide.img" class="swiper-lazy rounded-xl"  alt="logo")
+            .swiper-lazy-preloader
             
 </template>
 

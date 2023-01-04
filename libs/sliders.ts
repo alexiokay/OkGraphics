@@ -66,10 +66,6 @@ export const ulotki = [
 
 export const loga = [
   {
-    name: "Slide 1",
-    img: "/images/loga/1.webp",
-  },
-  {
     name: "Slide 2",
     img: "/images/loga/2.webp",
   },
