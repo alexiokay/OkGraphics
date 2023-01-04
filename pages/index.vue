@@ -2,6 +2,7 @@
 div(id="index-page" class=" w-full  flex flex-col")
   h1(v-show="false") Ok Graphics, twój zdalny doświadczony grafik komputerowy.
   nuxt-img(src="/images/4.webp"  width="300" height="300" )
+  p test
 
 
 
