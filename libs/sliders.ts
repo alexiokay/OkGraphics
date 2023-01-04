@@ -147,10 +147,6 @@ export const loga = [
     img: "/images/loga/20.webp",
   },
   {
-    name: "Slide 20",
-    img: "/images/loga/20.webp",
-  },
-  {
     name: "Slide 21",
     img: "/images/loga/21.jpg",
   },
