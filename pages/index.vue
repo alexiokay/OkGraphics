@@ -6,7 +6,7 @@ div(id="index-page" class=" w-full  flex flex-col")
 
   div(class="flex flex-col h-full items-center justify-center mt-16 md:mt-2 mb-10  ")
    h1(class=" text-6xl md:text-8xl  font-bold mt-4  text-white text-center") OK Graphics
-   div(class="flex h-full flex-row w-full sm:w-[46%] xl:w-[87%] mt-8 justify-center rounded-md bg-[#000000]")
+   div(class="flex h-full flex-row w-full sm:w-[26%] xl:w-[87%] mt-8 justify-center rounded-md bg-[#000000]")
    
     div(class="flex h-full flex-col w-[95%]  mt-8 rounded-md ") 
     
