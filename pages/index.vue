@@ -6,9 +6,9 @@ div(id="index-page" class=" w-full  flex flex-col")
 
   div(class="flex flex-col h-full items-center justify-center mt-16 md:mt-2 mb-10  ")
    h1(class=" text-6xl md:text-8xl  font-bold mt-4  text-white text-center") OK Graphics
-   div(class="flex h-full flex-row w-full sm:w-[96%] xl:w-[87%] mt-6 justify-center rounded-md bg-[#000000]")
+   div(class="flex h-full flex-row w-full sm:w-[96%] xl:w-[87%] mt-8 justify-center rounded-md bg-[#000000]")
    
-    div(class="flex h-full flex-col w-[95%]  mt-6 rounded-md ") 
+    div(class="flex h-full flex-col w-[95%] mt-8 rounded-md ") 
     
       div#header(class=" h-[35rem] sm:h-[33rem] w-full bg-[#c9ada7] shadow-xl flex flex-col items-center justify-center")
         div#header-content(class=" w-full h-[90%] md:h-[100%] flex flex-col items-center justify-around text-white")
