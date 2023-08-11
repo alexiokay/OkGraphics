@@ -1,6 +1,6 @@
 <template lang="pug">
 div(id="contact-page" class=" w-full h-full flex flex-col  bg-[#CFB53B]")
-    div(class="flex flex-row h-full justify-center mt-16 md:mt-20 mb-12  ")
+    div(class="flex flex-row h-auto justify-center mt-16 md:mt-20 mb-12  ")
         div(class="flex h-full items-start p-10 flex-col md:flex-row w-full sm:w-[96%] xl:w-[87%] justify-center rounded-md bg-[#000000]")
             
             <div class="map  w-full md:w-3/5 h-[50vh] md:h-[69vh]" id="map" ></div>

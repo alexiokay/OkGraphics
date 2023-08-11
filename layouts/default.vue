@@ -1,5 +1,5 @@
 <template lang="pug">
-div(style="display: flex, flex-direction: column")
+div(style="display:flex flex-direction: column" class="h-screen")
     <Navbar/>
     div#contact-mini(class=" hidden xl:flex xl:flex-col mt-5 xl:fixed xl:top-[79vh] xl:left-[2%] ")
       IconPhone( class=" w-9 h-9 text-blue-600 hover:cursor-pointer")
